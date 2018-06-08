@@ -1,0 +1,439 @@
+2018-06-05 09:50:08 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapy_app)
+2018-06-05 09:50:08 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.17134-SP0
+2018-06-05 09:50:08 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_app', 'LOG_FILE': 'logs\\default\\spider_1\\ac0aa82e688c11e880e6d863758aecce.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2018-06-05 09:50:08 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-06-05 09:50:08 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-06-05 09:50:08 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-06-05 09:50:08 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.Pipeline']
+2018-06-05 09:50:08 [scrapy.core.engine] INFO: Spider opened
+2018-06-05 09:50:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-05 09:50:08 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/robots.txt> (referer: None)
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko> (referer: None)
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 't.me': <GET https://t.me/korrespondentnet>
+2018-06-05 09:50:09 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.lun.ua': <GET https://www.lun.ua>
+2018-06-05 09:50:09 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.facebook.com': <GET https://www.facebook.com/korrespondent.net>
+2018-06-05 09:50:09 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'twitter.com': <GET https://twitter.com/korrespondent>
+2018-06-05 09:50:09 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'plus.google.com': <GET https://plus.google.com/+Korrespondent/posts>
+2018-06-05 09:50:09 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.liveinternet.ru': <GET http://www.liveinternet.ru/click>
+2018-06-05 09:50:09 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.bigmir.net': <GET http://www.bigmir.net/>
+2018-06-05 09:50:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://korrespondent.net/events/> from <GET http://korrespondent.net/events/>
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://pay.korrespondent.net/robots.txt> (referer: None)
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/russia/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/tech/space/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/tech/science/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/>
+{'url': 'https://korrespondent.net/'}
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://pay.korrespondent.net/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/taxes/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/russia/>
+{'url': 'https://korrespondent.net/world/russia/'}
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/tech/space/>
+{'url': 'https://korrespondent.net/tech/space/'}
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/tech/science/>
+{'url': 'https://korrespondent.net/tech/science/'}
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/sport/football/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pay.korrespondent.net/>
+{'url': 'https://pay.korrespondent.net/'}
+2018-06-05 09:50:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://market.umh.ua/catalog/korrespondent> from <GET http://subscribe.korrespondent.net/robots.txt>
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/sport/boks/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/taxes/>
+{'url': 'https://korrespondent.net/business/taxes/'}
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/russia/3977151-putyn-podpysal-zakon-o-kontrsanktsyiakh> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/tech/medicine/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/sport/football/>
+{'url': 'https://korrespondent.net/sport/football/'}
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/career/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/good_news/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/sport/boks/>
+{'url': 'https://korrespondent.net/sport/boks/'}
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/realestate/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/magazine/archive/805/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/russia/3977151-putyn-podpysal-zakon-o-kontrsanktsyiakh>
+{'url': 'https://korrespondent.net/world/russia/3977151-putyn-podpysal-zakon-o-kontrsanktsyiakh'}
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/new_rules/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/tech/medicine/>
+{'url': 'https://korrespondent.net/tech/medicine/'}
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/mmedia_and_adv/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/career/>
+{'url': 'https://korrespondent.net/business/career/'}
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/good_news/>
+{'url': 'https://korrespondent.net/good_news/'}
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/Default.aspx?page_id=3&lang=ru&roi=press_release> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/realestate/>
+{'url': 'https://korrespondent.net/business/realestate/'}
+2018-06-05 09:50:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/rss_subscription/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/magazine/archive/805/>
+{'url': 'https://korrespondent.net/magazine/archive/805/'}
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/new_rules/>
+{'url': 'https://korrespondent.net/new_rules/'}
+2018-06-05 09:50:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/mmedia_and_adv/>
+{'url': 'https://korrespondent.net/business/mmedia_and_adv/'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/rules/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/user_contract/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3975385-chto-zhdat-ukrayne-kluichevye-myssyy-myrotvortsev-oon> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/contacts/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/politics/3975589-rodyna-tebia-brosyt-reaktsyia-na-ubyistvo-babchenko> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/Default.aspx?page_id=3&lang=ru&roi=press_release>
+{'url': 'https://korrespondent.net/Default.aspx?page_id=3&lang=ru&roi=press_release'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3975501-ubyistvo-zhurnalysta-babchenko-podrobnosty> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/companies/3975722-nachal-s-Nord-Stream-kyev-zabyraet-dolh-u-hazproma> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/rss_subscription/>
+{'url': 'https://korrespondent.net/rss_subscription/'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/rules/>
+{'url': 'https://korrespondent.net/rules/'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/user_contract/>
+{'url': 'https://korrespondent.net/user_contract/'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3975385-chto-zhdat-ukrayne-kluichevye-myssyy-myrotvortsev-oon>
+{'url': 'https://korrespondent.net/world/3975385-chto-zhdat-ukrayne-kluichevye-myssyy-myrotvortsev-oon'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/showbiz/cinema/3976117-zrelyschnye-hlubokye-lehkye-hlavnye-fylmy-leta> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/worldabus/3975996-pravda-v-ukrayne-umerla-myr-o-smerty-babchenko> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/contacts/>
+{'url': 'https://korrespondent.net/contacts/'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/politics/3975589-rodyna-tebia-brosyt-reaktsyia-na-ubyistvo-babchenko>
+{'url': 'https://korrespondent.net/ukraine/politics/3975589-rodyna-tebia-brosyt-reaktsyia-na-ubyistvo-babchenko'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3975501-ubyistvo-zhurnalysta-babchenko-podrobnosty>
+{'url': 'https://korrespondent.net/ukraine/3975501-ubyistvo-zhurnalysta-babchenko-podrobnosty'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/companies/3975722-nachal-s-Nord-Stream-kyev-zabyraet-dolh-u-hazproma>
+{'url': 'https://korrespondent.net/business/companies/3975722-nachal-s-Nord-Stream-kyev-zabyraet-dolh-u-hazproma'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3976402-strakh-protyv-uzhasa-saha-ob-antykorruptsyonnom-sude> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3976434-o-hromkykh-delakh-davlenyy-y-zapade-yntervui-hlavy-nabu-sytnyka> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/showbiz/cinema/3976117-zrelyschnye-hlubokye-lehkye-hlavnye-fylmy-leta>
+{'url': 'https://korrespondent.net/showbiz/cinema/3976117-zrelyschnye-hlubokye-lehkye-hlavnye-fylmy-leta'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/worldabus/3975996-pravda-v-ukrayne-umerla-myr-o-smerty-babchenko>
+{'url': 'https://korrespondent.net/world/worldabus/3975996-pravda-v-ukrayne-umerla-myr-o-smerty-babchenko'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/economics/3976511-tramp-nachal-torhovuui-voinu-po-ukrayne-udaryt> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3976222-chastaia-praktyka-psevdoubyistva-v-ukrayne-y-myre> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3976468-holodovka-do-kontsa-kak-myr-podderzhyvaet-sentsova> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3976402-strakh-protyv-uzhasa-saha-ob-antykorruptsyonnom-sude>
+{'url': 'https://korrespondent.net/ukraine/3976402-strakh-protyv-uzhasa-saha-ob-antykorruptsyonnom-sude'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/events/> (referer: None)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/events/3976836-ytohy-0206-poroshenko-v-yspanyy-y-prohnoz-hschs> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/politics/3975793-ubyistvo-babchenko-bylo-operatsyei-sbu-hlavnoe> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3976369-novyi-plan-marshalla-soros-predskazal-razval-es> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3976434-o-hromkykh-delakh-davlenyy-y-zapade-yntervui-hlavy-nabu-sytnyka>
+{'url': 'https://korrespondent.net/ukraine/3976434-o-hromkykh-delakh-davlenyy-y-zapade-yntervui-hlavy-nabu-sytnyka'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/social.hnd?lotid=10&id=3977332> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/economics/3976511-tramp-nachal-torhovuui-voinu-po-ukrayne-udaryt>
+{'url': 'https://korrespondent.net/business/economics/3976511-tramp-nachal-torhovuui-voinu-po-ukrayne-udaryt'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3976222-chastaia-praktyka-psevdoubyistva-v-ukrayne-y-myre>
+{'url': 'https://korrespondent.net/ukraine/3976222-chastaia-praktyka-psevdoubyistva-v-ukrayne-y-myre'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/events/3976719-v-dtp-s-zhurnalystamy-v-rovno-pohyb-operator> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3976468-holodovka-do-kontsa-kak-myr-podderzhyvaet-sentsova>
+{'url': 'https://korrespondent.net/ukraine/3976468-holodovka-do-kontsa-kak-myr-podderzhyvaet-sentsova'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/events/>
+{'url': 'https://korrespondent.net/events/'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/events/3976836-ytohy-0206-poroshenko-v-yspanyy-y-prohnoz-hschs>
+{'url': 'https://korrespondent.net/ukraine/events/3976836-ytohy-0206-poroshenko-v-yspanyy-y-prohnoz-hschs'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/events/3977112-na-zhytomyrschyne-obnaruzhyly-dvukh-mertvykh-podrostkov> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/politics/3975793-ubyistvo-babchenko-bylo-operatsyei-sbu-hlavnoe>
+{'url': 'https://korrespondent.net/ukraine/politics/3975793-ubyistvo-babchenko-bylo-operatsyei-sbu-hlavnoe'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3976369-novyi-plan-marshalla-soros-predskazal-razval-es>
+{'url': 'https://korrespondent.net/world/3976369-novyi-plan-marshalla-soros-predskazal-razval-es'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/tag/159489/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/tag/174780/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/tag/477/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/tag/21566/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko>
+{'url': 'https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/tag/178875/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/social.hnd?lotid=10&id=3977332>
+{'url': 'https://korrespondent.net/social.hnd?lotid=10&id=3977332'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/events/3976719-v-dtp-s-zhurnalystamy-v-rovno-pohyb-operator>
+{'url': 'https://korrespondent.net/ukraine/events/3976719-v-dtp-s-zhurnalystamy-v-rovno-pohyb-operator'}
+2018-06-05 09:50:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://korrespondent.net/> from <GET http://korrespondent.net/>
+2018-06-05 09:50:10 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://korrespondent.net/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/events/3977112-na-zhytomyrschyne-obnaruzhyly-dvukh-mertvykh-podrostkov>
+{'url': 'https://korrespondent.net/ukraine/events/3977112-na-zhytomyrschyne-obnaruzhyly-dvukh-mertvykh-podrostkov'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/tag/401/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/events/3976989-ytohy-0306-polet-su-25-nad-pliazhem-y-uchenyia-nato> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/odessa/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/tech/science/3977079-kon-khromoi-y-tselaia-ulytsa-novye-otkrytyia-pompei> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/tag/159489/>
+{'url': 'https://korrespondent.net/tag/159489/'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/tag/174780/>
+{'url': 'https://korrespondent.net/tag/174780/'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/tag/477/>
+{'url': 'https://korrespondent.net/tag/477/'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/tag/21566/>
+{'url': 'https://korrespondent.net/tag/21566/'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/odessa/3977082-y-rtut-y-strelba-kak-proshly-vybory-pod-odessoi> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/tag/178875/>
+{'url': 'https://korrespondent.net/tag/178875/'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/tech/space/3977225-y-nykakoho-razmnozhenyia-pervaia-kolonyia-na-marse> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://korrespondent.net/ukraine/3977311-kto-uidet-v-otstavku-hroisman-protyv-danyluika> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://korrespondent.net/ukraine/3977306-put-k-obmenu-otkryt-pryhovor-suschenko-v-rossyy> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/tag/401/>
+{'url': 'https://korrespondent.net/tag/401/'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/events/3976989-ytohy-0306-polet-su-25-nad-pliazhem-y-uchenyia-nato>
+{'url': 'https://korrespondent.net/ukraine/events/3976989-ytohy-0306-polet-su-25-nad-pliazhem-y-uchenyia-nato'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/odessa/>
+{'url': 'https://korrespondent.net/city/odessa/'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/politics/3977048-hroisman-zaiavyl-chto-hotov-podat-v-otstavku> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/tech/science/3977079-kon-khromoi-y-tselaia-ulytsa-novye-otkrytyia-pompei>
+{'url': 'https://korrespondent.net/tech/science/3977079-kon-khromoi-y-tselaia-ulytsa-novye-otkrytyia-pompei'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/odessa/3977082-y-rtut-y-strelba-kak-proshly-vybory-pod-odessoi>
+{'url': 'https://korrespondent.net/city/odessa/3977082-y-rtut-y-strelba-kak-proshly-vybory-pod-odessoi'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/tech/space/3977225-y-nykakoho-razmnozhenyia-pervaia-kolonyia-na-marse>
+{'url': 'https://korrespondent.net/tech/space/3977225-y-nykakoho-razmnozhenyia-pervaia-kolonyia-na-marse'}
+2018-06-05 09:50:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://korrespondent.net/ukraine/3977311-kto-uidet-v-otstavku-hroisman-protyv-danyluika>: HTTP status code is not handled or not allowed
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3977167-sud-dal-suschenko-12-let-kolonyy-strohoho-rezhyma> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3977166-poroshenko-rasskazal-o-perehovorakh-v-yspanyy> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://korrespondent.net/ukraine/3977306-put-k-obmenu-otkryt-pryhovor-suschenko-v-rossyy>: HTTP status code is not handled or not allowed
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3977115-polyhraf-podtverdyl-chto-savchenko-hotovyla-terakt> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3977274-poroshenko-vstretylsia-s-korolem-yspanyy> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/gadgets/3977295-Apple-predstavyla-iOS-12> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3977149-u-savchenko-otrytsauit-rezultaty-polyhrafa> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/politics/3977048-hroisman-zaiavyl-chto-hotov-podat-v-otstavku>
+{'url': 'https://korrespondent.net/ukraine/politics/3977048-hroisman-zaiavyl-chto-hotov-podat-v-otstavku'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3977167-sud-dal-suschenko-12-let-kolonyy-strohoho-rezhyma>
+{'url': 'https://korrespondent.net/ukraine/3977167-sud-dal-suschenko-12-let-kolonyy-strohoho-rezhyma'}
+2018-06-05 09:50:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3977166-poroshenko-rasskazal-o-perehovorakh-v-yspanyy>
+{'url': 'https://korrespondent.net/ukraine/3977166-poroshenko-rasskazal-o-perehovorakh-v-yspanyy'}
+2018-06-05 09:50:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/votes/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/vibory2014/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3977115-polyhraf-podtverdyl-chto-savchenko-hotovyla-terakt>
+{'url': 'https://korrespondent.net/ukraine/3977115-polyhraf-podtverdyl-chto-savchenko-hotovyla-terakt'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/videoigry/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3977274-poroshenko-vstretylsia-s-korolem-yspanyy>
+{'url': 'https://korrespondent.net/ukraine/3977274-poroshenko-vstretylsia-s-korolem-yspanyy'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/gadgets/3977295-Apple-predstavyla-iOS-12>
+{'url': 'https://korrespondent.net/lifestyle/gadgets/3977295-Apple-predstavyla-iOS-12'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/magazine/advert/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/all_quotations/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3977149-u-savchenko-otrytsauit-rezultaty-polyhrafa>
+{'url': 'https://korrespondent.net/ukraine/3977149-u-savchenko-otrytsauit-rezultaty-polyhrafa'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/votes/>
+{'url': 'https://korrespondent.net/votes/'}
+2018-06-05 09:50:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://eforbgamebox.com/robots.txt> from <GET http://games.korrespondent.net/robots.txt>
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/vibory2014/>
+{'url': 'https://korrespondent.net/vibory2014/'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/videoigry/>
+{'url': 'https://korrespondent.net/lifestyle/videoigry/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/magazine/projects/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/magazine/subjects/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/special/1657-suizhety> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/magazine/advert/>
+{'url': 'https://korrespondent.net/magazine/advert/'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/all_quotations/>
+{'url': 'https://korrespondent.net/all_quotations/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/poker/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/magazine/archive/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/afisha/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/magazine/projects/>
+{'url': 'https://korrespondent.net/magazine/projects/'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/magazine/subjects/>
+{'url': 'https://korrespondent.net/magazine/subjects/'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/special/1657-suizhety>
+{'url': 'https://korrespondent.net/special/1657-suizhety'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/poker/>
+{'url': 'https://korrespondent.net/lifestyle/poker/'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/magazine/archive/>
+{'url': 'https://korrespondent.net/magazine/archive/'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/afisha/>
+{'url': 'https://korrespondent.net/lifestyle/afisha/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/interiors/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/fashion/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/showbiz/music/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/travel/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/showbiz/cinema/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://market.umh.ua/catalog/korrespondent> (referer: None)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/motors/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://eforbgamebox.com/robots.txt> (referer: None)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/gadgets/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/showbiz/culture/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://market.umh.ua/catalog/korrespondent> from <GET http://subscribe.korrespondent.net/>
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/interiors/>
+{'url': 'https://korrespondent.net/lifestyle/interiors/'}
+2018-06-05 09:50:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://eforbgamebox.com/> from <GET http://games.korrespondent.net/>
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/fooddrinks/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/fashion/>
+{'url': 'https://korrespondent.net/lifestyle/fashion/'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/showbiz/music/>
+{'url': 'https://korrespondent.net/showbiz/music/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/worldabus/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/travel/>
+{'url': 'https://korrespondent.net/lifestyle/travel/'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/showbiz/cinema/>
+{'url': 'https://korrespondent.net/showbiz/cinema/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/sport/chess/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/motors/>
+{'url': 'https://korrespondent.net/lifestyle/motors/'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/gadgets/>
+{'url': 'https://korrespondent.net/lifestyle/gadgets/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/auto/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://market.umh.ua/robots.txt> (referer: None)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/showbiz/culture/>
+{'url': 'https://korrespondent.net/showbiz/culture/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/financial/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/sport/formula/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://eforbgamebox.com/robots.txt> (referer: None)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/fooddrinks/>
+{'url': 'https://korrespondent.net/lifestyle/fooddrinks/'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/worldabus/>
+{'url': 'https://korrespondent.net/world/worldabus/'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/sport/chess/>
+{'url': 'https://korrespondent.net/sport/chess/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/sport/hokey/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/tech/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/economics/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/auto/>
+{'url': 'https://korrespondent.net/business/auto/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/companies/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/web/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/financial/>
+{'url': 'https://korrespondent.net/business/financial/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/showbiz/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/sport/formula/>
+{'url': 'https://korrespondent.net/sport/formula/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://blogs.korrespondent.net/robots.txt> (referer: None)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/sport/hokey/>
+{'url': 'https://korrespondent.net/sport/hokey/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/sport/basketball/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/tech/>
+{'url': 'https://korrespondent.net/tech/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/photo/strange/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/economics/>
+{'url': 'https://korrespondent.net/business/economics/'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/companies/>
+{'url': 'https://korrespondent.net/business/companies/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/web/>
+{'url': 'https://korrespondent.net/business/web/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://blogs.korrespondent.net/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/showbiz/>
+{'url': 'https://korrespondent.net/showbiz/'}
+2018-06-05 09:50:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/>
+{'url': 'https://korrespondent.net/lifestyle/'}
+2018-06-05 09:50:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/politics/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/sport/tenis/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:12 [scrapy.core.engine] DEBUG: Crawled (404) <GET http://sp.korrespondent.net/robots.txt> (referer: None)
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/>
+{'url': 'https://korrespondent.net/world/'}
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/>
+{'url': 'https://korrespondent.net/city/'}
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/sport/basketball/>
+{'url': 'https://korrespondent.net/sport/basketball/'}
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/>
+{'url': 'https://korrespondent.net/business/'}
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/photo/strange/>
+{'url': 'https://korrespondent.net/photo/strange/'}
+2018-06-05 09:50:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/longreads/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://sp.korrespondent.net/> (referer: None)
+2018-06-05 09:50:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/events/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/popular/most_viewed/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/>
+{'url': 'https://korrespondent.net/ukraine/'}
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://blogs.korrespondent.net/>
+{'url': 'https://blogs.korrespondent.net/'}
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/politics/>
+{'url': 'https://korrespondent.net/ukraine/politics/'}
+2018-06-05 09:50:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ua.korrespondent.net/robots.txt> (referer: None)
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/sport/tenis/>
+{'url': 'https://korrespondent.net/sport/tenis/'}
+2018-06-05 09:50:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/sport/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ua.korrespondent.net/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/longreads/>
+{'url': 'https://korrespondent.net/longreads/'}
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://sp.korrespondent.net/>
+{'url': 'http://sp.korrespondent.net/'}
+2018-06-05 09:50:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/video/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/events/>
+{'url': 'https://korrespondent.net/ukraine/events/'}
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/popular/most_viewed/>
+{'url': 'https://korrespondent.net/popular/most_viewed/'}
+2018-06-05 09:50:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/magazine/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/photo/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/sport/>
+{'url': 'https://korrespondent.net/sport/'}
+2018-06-05 09:50:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://eforbgamebox.com/landing> from <GET https://eforbgamebox.com/>
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ua.korrespondent.net/>
+{'url': 'https://ua.korrespondent.net/'}
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/video/>
+{'url': 'https://korrespondent.net/video/'}
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/magazine/>
+{'url': 'https://korrespondent.net/magazine/'}
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/photo/>
+{'url': 'https://korrespondent.net/photo/'}
+2018-06-05 09:50:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/indexes/course_valjut/> (referer: https://korrespondent.net/ukraine/events/3977332-ytohy-0406-terroryst-savchenko-sud-nad-suschenko)
+2018-06-05 09:50:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://eforbgamebox.com/landing> (referer: None)
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/indexes/course_valjut/>
+{'url': 'https://korrespondent.net/business/indexes/course_valjut/'}
+2018-06-05 09:50:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://eforbgamebox.com/landing>
+{'url': 'https://eforbgamebox.com/landing'}
+2018-06-05 09:50:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://market.umh.ua/catalog/korrespondent> (referer: None)
+2018-06-05 09:50:13 [scrapy.core.scraper] DEBUG: Scraped from <200 http://market.umh.ua/catalog/korrespondent>
+{'url': 'http://market.umh.ua/catalog/korrespondent'}
+2018-06-05 09:50:31 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://files.korrespondent.net/robots.txt> (failed 1 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2018-06-05 09:50:52 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://files.korrespondent.net/robots.txt> (failed 2 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2018-06-05 09:51:08 [scrapy.extensions.logstats] INFO: Crawled 123 pages (at 123 pages/min), scraped 111 items (at 111 items/min)
+2018-06-05 09:51:13 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET http://files.korrespondent.net/robots.txt> (failed 3 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2018-06-05 09:51:13 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET http://files.korrespondent.net/robots.txt>: TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+twisted.internet.error.TCPTimedOutError: TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2018-06-05 09:51:34 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://files.korrespondent.net/> (failed 1 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2018-06-05 09:51:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://files.korrespondent.net/> (failed 2 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2018-06-05 09:52:08 [scrapy.extensions.logstats] INFO: Crawled 123 pages (at 0 pages/min), scraped 111 items (at 0 items/min)
+2018-06-05 09:52:16 [scrapy.downloadermiddlewares.retry] DEBUG: Gave up retrying <GET http://files.korrespondent.net/> (failed 3 times): TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2018-06-05 09:52:16 [scrapy.core.scraper] ERROR: Error downloading <GET http://files.korrespondent.net/>: TCP connection timed out: 10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+2018-06-05 09:52:16 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-06-05 09:52:17 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 6,
+ 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 6,
+ 'downloader/request_bytes': 53896,
+ 'downloader/request_count': 136,
+ 'downloader/request_method_count/GET': 136,
+ 'downloader/response_bytes': 3474158,
+ 'downloader/response_count': 130,
+ 'downloader/response_status_count/200': 120,
+ 'downloader/response_status_count/301': 6,
+ 'downloader/response_status_count/302': 1,
+ 'downloader/response_status_count/404': 3,
+ 'dupefilter/filtered': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 6, 5, 6, 52, 17, 406534),
+ 'httperror/response_ignored_count': 2,
+ 'httperror/response_ignored_status_count/404': 2,
+ 'item_scraped_count': 111,
+ 'log_count/DEBUG': 256,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 11,
+ 'offsite/domains': 7,
+ 'offsite/filtered': 7,
+ 'request_depth_max': 1,
+ 'response_received_count': 123,
+ 'retry/count': 4,
+ 'retry/max_reached': 2,
+ 'retry/reason_count/twisted.internet.error.TCPTimedOutError': 4,
+ 'scheduler/dequeued': 122,
+ 'scheduler/dequeued/memory': 122,
+ 'scheduler/enqueued': 122,
+ 'scheduler/enqueued/memory': 122,
+ 'start_time': datetime.datetime(2018, 6, 5, 6, 50, 8, 907843)}
+2018-06-05 09:52:17 [scrapy.core.engine] INFO: Spider closed (finished)

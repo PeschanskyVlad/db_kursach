@@ -1,0 +1,420 @@
+2018-06-05 11:22:13 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapy_app)
+2018-06-05 11:22:13 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.17134-SP0
+2018-06-05 11:22:13 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_app', 'LOG_FILE': 'logs\\default\\spider_1\\8acc53f0689911e881d4d863758aecce.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2018-06-05 11:22:13 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-06-05 11:22:13 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-06-05 11:22:13 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-06-05 11:22:13 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.Pipeline']
+2018-06-05 11:22:13 [scrapy.core.engine] INFO: Spider opened
+2018-06-05 11:22:13 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-05 11:22:13 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-06-05 11:22:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/robots.txt> (referer: None)
+2018-06-05 11:22:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider> (referer: None)
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'stackexchange.com': <GET https://stackexchange.com/users/?tab=inbox>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'stackoverflow.blog': <GET https://stackoverflow.blog>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.stackoverflowbusiness.com': <GET https://www.stackoverflowbusiness.com/?ref=topbar_help>
+2018-06-05 11:22:16 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/posts/15611605/revisions>
+2018-06-05 11:22:16 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/posts/15611605/edit>
+2018-06-05 11:22:16 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/questions/ask>
+2018-06-05 11:22:16 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/users/login?ssrc=site_switcher&returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f15611605%2fhow-to-pass-a-user-defined-argument-in-scrapy-spider>
+2018-06-05 11:22:16 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/users/signup?ssrc=site_switcher&returnurl=%2fusers%2fstory%2fcurrent>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'doc.scrapy.org': <GET http://doc.scrapy.org/en/latest/topics/spiders.html#spider-arguments>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'your.ip.address.here': <GET http://your.ip.address.here:port/schedule.json>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'cs.stackexchange.com': <GET https://cs.stackexchange.com/questions/92720/finite-state-automata-final-states>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'codereview.stackexchange.com': <GET https://codereview.stackexchange.com/questions/195845/finding-the-first-triangle-number-with-over-five-hundred-divisors>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'ux.stackexchange.com': <GET https://ux.stackexchange.com/questions/118495/how-to-let-a-user-know-that-an-image-is-actually-an-animated-gif>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'interpersonal.stackexchange.com': <GET https://interpersonal.stackexchange.com/questions/15046/how-can-i-politely-get-the-attention-of-a-coworker-who-is-listening-to-music>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'salesforce.stackexchange.com': <GET https://salesforce.stackexchange.com/questions/220459/generate-new-password-and-notify-user-immediately>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'rpg.stackexchange.com': <GET https://rpg.stackexchange.com/questions/123831/what-balance-problems-arise-by-allowing-grappling-as-an-option-for-an-opportunit>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'retrocomputing.stackexchange.com': <GET https://retrocomputing.stackexchange.com/questions/6620/why-plastic-cases>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'academia.stackexchange.com': <GET https://academia.stackexchange.com/questions/110774/should-i-explain-the-type-of-a-graph-in-my-masters-thesis>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'askubuntu.com': <GET https://askubuntu.com/questions/1043640/for-loop-in-folders-with-n-character-in-their-names>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'mathematica.stackexchange.com': <GET https://mathematica.stackexchange.com/questions/174649/sparse-block-matrices-all-wrong>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'ell.stackexchange.com': <GET https://ell.stackexchange.com/questions/168323/whats-the-meaning-of-you-get-that-much-because-that-s-how-much-you-get>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'scifi.stackexchange.com': <GET https://scifi.stackexchange.com/questions/188995/short-story-two-amoral-scientists-arm-primitive-worlds-for-entertainment>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'aviation.stackexchange.com': <GET https://aviation.stackexchange.com/questions/52258/what-is-the-aerodynamic-motivation-behind-vortex-generators>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'history.stackexchange.com': <GET https://history.stackexchange.com/questions/46422/has-an-heir-ever-made-the-country-believe-the-current-ruler-died-in-order-to-tak>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'puzzling.stackexchange.com': <GET https://puzzling.stackexchange.com/questions/66779/where-can-you-find>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'skeptics.stackexchange.com': <GET https://skeptics.stackexchange.com/questions/41361/did-valerie-jarrett-say-she-wanted-america-to-be-a-more-islamic-country>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'codegolf.stackexchange.com': <GET https://codegolf.stackexchange.com/questions/166045/what-surrounds-my-minesweeper-tile>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'cooking.stackexchange.com': <GET https://cooking.stackexchange.com/questions/90159/i-bought-some-new-canning-jars-from-walmart-do-i-need-to-sterelize-them-in-a-ca>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'english.stackexchange.com': <GET https://english.stackexchange.com/questions/449003/what-is-it-called-when-you-shorten-a-word-to-only-its-important-letters>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'workplace.stackexchange.com': <GET https://workplace.stackexchange.com/questions/113387/i-have-reason-to-believe-that-my-very-competent-coworker-is-being-severely-under>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'security.stackexchange.com': <GET https://security.stackexchange.com/questions/186781/security-by-obscurity-is-horrible-is-security-and-obscurity-good>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'serverfault.com': <GET https://serverfault.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'superuser.com': <GET https://superuser.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'webapps.stackexchange.com': <GET https://webapps.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'webmasters.stackexchange.com': <GET https://webmasters.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'gamedev.stackexchange.com': <GET https://gamedev.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'tex.stackexchange.com': <GET https://tex.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'softwareengineering.stackexchange.com': <GET https://softwareengineering.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'unix.stackexchange.com': <GET https://unix.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'apple.stackexchange.com': <GET https://apple.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'wordpress.stackexchange.com': <GET https://wordpress.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'gis.stackexchange.com': <GET https://gis.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'electronics.stackexchange.com': <GET https://electronics.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'android.stackexchange.com': <GET https://android.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'dba.stackexchange.com': <GET https://dba.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'drupal.stackexchange.com': <GET https://drupal.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'sharepoint.stackexchange.com': <GET https://sharepoint.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'expressionengine.stackexchange.com': <GET https://expressionengine.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'blender.stackexchange.com': <GET https://blender.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'networkengineering.stackexchange.com': <GET https://networkengineering.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'crypto.stackexchange.com': <GET https://crypto.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'magento.stackexchange.com': <GET https://magento.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'softwarerecs.stackexchange.com': <GET https://softwarerecs.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'dsp.stackexchange.com': <GET https://dsp.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'emacs.stackexchange.com': <GET https://emacs.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'raspberrypi.stackexchange.com': <GET https://raspberrypi.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'ethereum.stackexchange.com': <GET https://ethereum.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'datascience.stackexchange.com': <GET https://datascience.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'arduino.stackexchange.com': <GET https://arduino.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'bitcoin.stackexchange.com': <GET https://bitcoin.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'photo.stackexchange.com': <GET https://photo.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'graphicdesign.stackexchange.com': <GET https://graphicdesign.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'movies.stackexchange.com': <GET https://movies.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'music.stackexchange.com': <GET https://music.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'worldbuilding.stackexchange.com': <GET https://worldbuilding.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'diy.stackexchange.com': <GET https://diy.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'money.stackexchange.com': <GET https://money.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'law.stackexchange.com': <GET https://law.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'judaism.stackexchange.com': <GET https://judaism.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'travel.stackexchange.com': <GET https://travel.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'christianity.stackexchange.com': <GET https://christianity.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'japanese.stackexchange.com': <GET https://japanese.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'gaming.stackexchange.com': <GET https://gaming.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'bicycles.stackexchange.com': <GET https://bicycles.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'anime.stackexchange.com': <GET https://anime.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'mechanics.stackexchange.com': <GET https://mechanics.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'mathoverflow.net': <GET https://mathoverflow.net>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'math.stackexchange.com': <GET https://math.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'stats.stackexchange.com': <GET https://stats.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'cstheory.stackexchange.com': <GET https://cstheory.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'physics.stackexchange.com': <GET https://physics.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'chemistry.stackexchange.com': <GET https://chemistry.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'biology.stackexchange.com': <GET https://biology.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'philosophy.stackexchange.com': <GET https://philosophy.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'meta.stackexchange.com': <GET https://meta.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'stackapps.com': <GET https://stackapps.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'api.stackexchange.com': <GET https://api.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'data.stackexchange.com': <GET https://data.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'area51.stackexchange.com': <GET https://area51.stackexchange.com>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.facebook.com': <GET https://www.facebook.com/officialstackoverflow/>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'twitter.com': <GET https://twitter.com/stackoverflow>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'linkedin.com': <GET https://linkedin.com/company/stack-overflow>
+2018-06-05 11:22:16 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'creativecommons.org': <GET https://creativecommons.org/licenses/by-sa/3.0/>
+2018-06-05 11:22:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://meta.stackoverflow.com/robots.txt> (referer: None)
+2018-06-05 11:22:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/users/1874105/l-lawliet> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/users/881229/kara> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider> from <GET https://stackoverflow.com/q/15611605>
+2018-06-05 11:22:18 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-06-05 11:22:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/users/1874105/l-lawliet>
+{'url': 'https://stackoverflow.com/users/1874105/l-lawliet'}
+2018-06-05 11:22:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/users/881229/kara>
+{'url': 'https://stackoverflow.com/users/881229/kara'}
+2018-06-05 11:22:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://chat.stackoverflow.com/robots.txt> (referer: None)
+2018-06-05 11:22:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com>
+{'url': 'https://stackoverflow.com'}
+2018-06-05 11:22:18 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://stackoverflow.com/legal/cookie-policy> (failed 1 times): 503 Service Unavailable
+2018-06-05 11:22:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/legal/privacy-policy> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/company> from <GET https://stackoverflow.com/company/about>
+2018-06-05 11:22:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/legal/privacy-policy>
+{'url': 'https://stackoverflow.com/legal/privacy-policy'}
+2018-06-05 11:22:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://meta.stackoverflow.com> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/legal/terms-of-service/public> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://meta.stackoverflow.com>
+{'url': 'https://meta.stackoverflow.com'}
+2018-06-05 11:22:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/tagged/scrapy> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/legal/terms-of-service/public>
+{'url': 'https://stackoverflow.com/legal/terms-of-service/public'}
+2018-06-05 11:22:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/tour> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/tagged/scrapy>
+{'url': 'https://stackoverflow.com/questions/tagged/scrapy'}
+2018-06-05 11:22:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/tour>
+{'url': 'https://stackoverflow.com/tour'}
+2018-06-05 11:22:19 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/legal/terms-of-service> from <GET https://stackoverflow.com/legal>
+2018-06-05 11:22:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/company/contact> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/help> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/tagged/web-crawler> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:19 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/feeds/question/15611605>
+2018-06-05 11:22:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/company/contact>
+{'url': 'https://stackoverflow.com/company/contact'}
+2018-06-05 11:22:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/help>
+{'url': 'https://stackoverflow.com/help'}
+2018-06-05 11:22:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/tagged/web-crawler>
+{'url': 'https://stackoverflow.com/questions/tagged/web-crawler'}
+2018-06-05 11:22:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/company> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/company/work-here> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:19 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://stackoverflow.com/jobs/directory/developer-jobs> (failed 1 times): 503 Service Unavailable
+2018-06-05 11:22:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://es.stackoverflow.com/robots.txt> (referer: None)
+2018-06-05 11:22:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/company>
+{'url': 'https://stackoverflow.com/company'}
+2018-06-05 11:22:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/company/work-here>
+{'url': 'https://stackoverflow.com/company/work-here'}
+2018-06-05 11:22:20 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://ru.stackoverflow.com/robots.txt> (failed 1 times): 503 Service Unavailable
+2018-06-05 11:22:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/company/press> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/jobs/salary> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/legal/terms-of-service> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/company/press>
+{'url': 'https://stackoverflow.com/company/press'}
+2018-06-05 11:22:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/jobs/salary>
+{'url': 'https://stackoverflow.com/jobs/salary'}
+2018-06-05 11:22:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/enterprise> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/38422546/in-scrapy-start-urls-not-defined-when-passed-as-an-input-argument> from <GET https://stackoverflow.com/q/38422546>
+2018-06-05 11:22:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://pt.stackoverflow.com/robots.txt> (referer: None)
+2018-06-05 11:22:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/legal/terms-of-service>
+{'url': 'https://stackoverflow.com/legal/terms-of-service'}
+2018-06-05 11:22:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/enterprise>
+{'url': 'https://stackoverflow.com/enterprise'}
+2018-06-05 11:22:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ru.stackoverflow.com/robots.txt> (referer: None)
+2018-06-05 11:22:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://chat.stackoverflow.com> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/32316572/scrapy-pass-arguments-to-spider-that-is-defined-in-spiders-directory> from <GET https://stackoverflow.com/q/32316572>
+2018-06-05 11:22:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://chat.stackoverflow.com>
+{'url': 'https://chat.stackoverflow.com'}
+2018-06-05 11:22:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/32316572/scrapy-pass-arguments-to-spider-that-is-defined-in-spiders-directory> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/38371212/how-to-pass-a-user-defined-argument-to-a-scrapy-spider-when-running-it-from-a-sc> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://es.stackoverflow.com> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/jobs> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:21 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/28354770/scrapy-pass-arguments-to-cmdline-execute> from <GET https://stackoverflow.com/q/28354770>
+2018-06-05 11:22:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/32316572/scrapy-pass-arguments-to-spider-that-is-defined-in-spiders-directory>
+{'url': 'https://stackoverflow.com/questions/32316572/scrapy-pass-arguments-to-spider-that-is-defined-in-spiders-directory'}
+2018-06-05 11:22:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/38371212/how-to-pass-a-user-defined-argument-to-a-scrapy-spider-when-running-it-from-a-sc>
+{'url': 'https://stackoverflow.com/questions/38371212/how-to-pass-a-user-defined-argument-to-a-scrapy-spider-when-running-it-from-a-sc'}
+2018-06-05 11:22:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/38422546/in-scrapy-start-urls-not-defined-when-passed-as-an-input-argument> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://es.stackoverflow.com>
+{'url': 'https://es.stackoverflow.com'}
+2018-06-05 11:22:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/jobs>
+{'url': 'https://stackoverflow.com/jobs'}
+2018-06-05 11:22:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/38422546/in-scrapy-start-urls-not-defined-when-passed-as-an-input-argument>
+{'url': 'https://stackoverflow.com/questions/38422546/in-scrapy-start-urls-not-defined-when-passed-as-an-input-argument'}
+2018-06-05 11:22:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/38421954/how-to-pass-two-user-defined-arguments-to-a-scrapy-spider> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/38421954/how-to-pass-two-user-defined-arguments-to-a-scrapy-spider>
+{'url': 'https://stackoverflow.com/questions/38421954/how-to-pass-two-user-defined-arguments-to-a-scrapy-spider'}
+2018-06-05 11:22:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://pt.stackoverflow.com> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/28354770/scrapy-pass-arguments-to-cmdline-execute> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/30997024/how-to-pass-multiple-arguments-to-scrapy-spider-getting-error-running-scrapy-c> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:21 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/24589106/passing-json-arguments-to-a-spider-in-scrapy> from <GET https://stackoverflow.com/q/24589106>
+2018-06-05 11:22:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://pt.stackoverflow.com>
+{'url': 'https://pt.stackoverflow.com'}
+2018-06-05 11:22:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/28354770/scrapy-pass-arguments-to-cmdline-execute>
+{'url': 'https://stackoverflow.com/questions/28354770/scrapy-pass-arguments-to-cmdline-execute'}
+2018-06-05 11:22:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/30997024/how-to-pass-multiple-arguments-to-scrapy-spider-getting-error-running-scrapy-c>
+{'url': 'https://stackoverflow.com/questions/30997024/how-to-pass-multiple-arguments-to-scrapy-spider-getting-error-running-scrapy-c'}
+2018-06-05 11:22:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/10943745/running-multiple-spiders-in-scrapy> from <GET https://stackoverflow.com/q/10943745>
+2018-06-05 11:22:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/24589106/passing-json-arguments-to-a-spider-in-scrapy> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/24589106/passing-json-arguments-to-a-spider-in-scrapy>
+{'url': 'https://stackoverflow.com/questions/24589106/passing-json-arguments-to-a-spider-in-scrapy'}
+2018-06-05 11:22:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/9814827/creating-a-generic-scrapy-spider> from <GET https://stackoverflow.com/q/9814827>
+2018-06-05 11:22:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/10943745/running-multiple-spiders-in-scrapy> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/10943745/running-multiple-spiders-in-scrapy>
+{'url': 'https://stackoverflow.com/questions/10943745/running-multiple-spiders-in-scrapy'}
+2018-06-05 11:22:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/9814827/creating-a-generic-scrapy-spider> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/9814827/creating-a-generic-scrapy-spider>
+{'url': 'https://stackoverflow.com/questions/9814827/creating-a-generic-scrapy-spider'}
+2018-06-05 11:22:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/35623931/how-to-make-your-scrapy-spiders-deploy-for-long-term-running> from <GET https://stackoverflow.com/q/35623931>
+2018-06-05 11:22:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/35623931/how-to-make-your-scrapy-spiders-deploy-for-long-term-running?noredirect=1> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ru.stackoverflow.com> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/35623931/how-to-make-your-scrapy-spiders-deploy-for-long-term-running?noredirect=1>
+{'url': 'https://stackoverflow.com/questions/35623931/how-to-make-your-scrapy-spiders-deploy-for-long-term-running?noredirect=1'}
+2018-06-05 11:22:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ru.stackoverflow.com>
+{'url': 'https://ru.stackoverflow.com'}
+2018-06-05 11:22:24 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/31394328/how-to-use-a-decorator-to-enable-a-spider-to-distinguish-between-scrapy-pipeline> from <GET https://stackoverflow.com/q/31394328>
+2018-06-05 11:22:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/linked/15611605> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/31394328/how-to-use-a-decorator-to-enable-a-spider-to-distinguish-between-scrapy-pipeline?noredirect=1> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/linked/15611605>
+{'url': 'https://stackoverflow.com/questions/linked/15611605'}
+2018-06-05 11:22:24 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/38421954/how-to-pass-two-user-defined-arguments-to-a-scrapy-spider> from <GET https://stackoverflow.com/q/38421954>
+2018-06-05 11:22:24 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/36740947/how-to-pass-arguments-when-using-crawler-runner-in-flask> from <GET https://stackoverflow.com/q/36740947>
+2018-06-05 11:22:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/17752092/passing-arguments-to-scrapy> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/31394328/how-to-use-a-decorator-to-enable-a-spider-to-distinguish-between-scrapy-pipeline?noredirect=1>
+{'url': 'https://stackoverflow.com/questions/31394328/how-to-use-a-decorator-to-enable-a-spider-to-distinguish-between-scrapy-pipeline?noredirect=1'}
+2018-06-05 11:22:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/17752092/passing-arguments-to-scrapy>
+{'url': 'https://stackoverflow.com/questions/17752092/passing-arguments-to-scrapy'}
+2018-06-05 11:22:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/38421954/how-to-pass-two-user-defined-arguments-to-a-scrapy-spider?noredirect=1> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:25 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/38371212/how-to-pass-a-user-defined-argument-to-a-scrapy-spider-when-running-it-from-a-sc> from <GET https://stackoverflow.com/q/38371212>
+2018-06-05 11:22:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/38421954/how-to-pass-two-user-defined-arguments-to-a-scrapy-spider?noredirect=1>
+{'url': 'https://stackoverflow.com/questions/38421954/how-to-pass-two-user-defined-arguments-to-a-scrapy-spider?noredirect=1'}
+2018-06-05 11:22:25 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/26987945/python-scrapy-scrapping-data-from-multiple-website-urls> from <GET https://stackoverflow.com/q/26987945>
+2018-06-05 11:22:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/26987945/python-scrapy-scrapping-data-from-multiple-website-urls?noredirect=1> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:25 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/users/login?ssrc=question_page&returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f15611605%2fhow-to-pass-a-user-defined-argument-in-scrapy-spider%23new-answer>
+2018-06-05 11:22:25 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/posts/32456731/revisions>
+2018-06-05 11:22:25 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/posts/32456731/edit>
+2018-06-05 11:22:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/36740947/how-to-pass-arguments-when-using-crawler-runner-in-flask?noredirect=1> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/26987945/python-scrapy-scrapping-data-from-multiple-website-urls?noredirect=1>
+{'url': 'https://stackoverflow.com/questions/26987945/python-scrapy-scrapping-data-from-multiple-website-urls?noredirect=1'}
+2018-06-05 11:22:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/36740947/how-to-pass-arguments-when-using-crawler-runner-in-flask?noredirect=1>
+{'url': 'https://stackoverflow.com/questions/36740947/how-to-pass-arguments-when-using-crawler-runner-in-flask?noredirect=1'}
+2018-06-05 11:22:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/17752092/passing-arguments-to-scrapy> from <GET https://stackoverflow.com/q/17752092>
+2018-06-05 11:22:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/17752092/passing-arguments-to-scrapy?noredirect=1> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:26 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/posts/32541281/revisions>
+2018-06-05 11:22:26 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/posts/32541281/edit>
+2018-06-05 11:22:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/17752092/passing-arguments-to-scrapy?noredirect=1>
+{'url': 'https://stackoverflow.com/questions/17752092/passing-arguments-to-scrapy?noredirect=1'}
+2018-06-05 11:22:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/35748061/how-to-stop-scrapy-spider-after-certain-number-of-requests> from <GET https://stackoverflow.com/q/35748061>
+2018-06-05 11:22:27 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/30997024/how-to-pass-multiple-arguments-to-scrapy-spider-getting-error-running-scrapy-c> from <GET https://stackoverflow.com/q/30997024>
+2018-06-05 11:22:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/30997024/how-to-pass-multiple-arguments-to-scrapy-spider-getting-error-running-scrapy-c?noredirect=1> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:27 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/posts/41123138/edit>
+2018-06-05 11:22:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/35623931/how-to-make-your-scrapy-spiders-deploy-for-long-term-running> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/30997024/how-to-pass-multiple-arguments-to-scrapy-spider-getting-error-running-scrapy-c?noredirect=1>
+{'url': 'https://stackoverflow.com/questions/30997024/how-to-pass-multiple-arguments-to-scrapy-spider-getting-error-running-scrapy-c?noredirect=1'}
+2018-06-05 11:22:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/35748061/how-to-stop-scrapy-spider-after-certain-number-of-requests?noredirect=1> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/17307718/pass-scrapy-spider-a-list-of-urls-to-crawl-via-txt-file?noredirect=1> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/35623931/how-to-make-your-scrapy-spiders-deploy-for-long-term-running>
+{'url': 'https://stackoverflow.com/questions/35623931/how-to-make-your-scrapy-spiders-deploy-for-long-term-running'}
+2018-06-05 11:22:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/35748061/how-to-stop-scrapy-spider-after-certain-number-of-requests?noredirect=1>
+{'url': 'https://stackoverflow.com/questions/35748061/how-to-stop-scrapy-spider-after-certain-number-of-requests?noredirect=1'}
+2018-06-05 11:22:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/17307718/pass-scrapy-spider-a-list-of-urls-to-crawl-via-txt-file?noredirect=1>
+{'url': 'https://stackoverflow.com/questions/17307718/pass-scrapy-spider-a-list-of-urls-to-crawl-via-txt-file?noredirect=1'}
+2018-06-05 11:22:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/36740947/how-to-pass-arguments-when-using-crawler-runner-in-flask> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:27 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/posts/15618520/revisions>
+2018-06-05 11:22:27 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/posts/15618520/edit>
+2018-06-05 11:22:27 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/17307718/pass-scrapy-spider-a-list-of-urls-to-crawl-via-txt-file> from <GET https://stackoverflow.com/q/17307718>
+2018-06-05 11:22:27 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider?lastactivity> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:27 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/32456731#32456731> from <GET https://stackoverflow.com/a/32456731>
+2018-06-05 11:22:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/36740947/how-to-pass-arguments-when-using-crawler-runner-in-flask>
+{'url': 'https://stackoverflow.com/questions/36740947/how-to-pass-arguments-when-using-crawler-runner-in-flask'}
+2018-06-05 11:22:27 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider?lastactivity>: HTTP status code is not handled or not allowed
+2018-06-05 11:22:28 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/32541281#32541281> from <GET https://stackoverflow.com/a/32541281>
+2018-06-05 11:22:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/users/5326634/srmhitter9062> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/users/4839355/madmanick> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:28 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/41123138#41123138> from <GET https://stackoverflow.com/a/41123138>
+2018-06-05 11:22:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/users/5326634/srmhitter9062>
+{'url': 'https://stackoverflow.com/users/5326634/srmhitter9062'}
+2018-06-05 11:22:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/users/4839355/madmanick>
+{'url': 'https://stackoverflow.com/users/4839355/madmanick'}
+2018-06-05 11:22:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/users/2877052/hassan-raza> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:28 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/users/signup?ssrc=head&returnurl=%2fusers%2fstory%2fcurrent>
+2018-06-05 11:22:28 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://stackoverflow.com/users/login?ssrc=head&returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f15611605%2fhow-to-pass-a-user-defined-argument-in-scrapy-spider>
+2018-06-05 11:22:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/users/194732/birla> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/users/2877052/hassan-raza>
+{'url': 'https://stackoverflow.com/users/2877052/hassan-raza'}
+2018-06-05 11:22:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/users/194732/birla>
+{'url': 'https://stackoverflow.com/users/194732/birla'}
+2018-06-05 11:22:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/users/858913/elrull> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/users/858913/elrull>
+{'url': 'https://stackoverflow.com/users/858913/elrull'}
+2018-06-05 11:22:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/users/395737/steven-almeroth> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/26987945/python-scrapy-scrapping-data-from-multiple-website-urls> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:29 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/15618520#15618520> from <GET https://stackoverflow.com/a/15618520>
+2018-06-05 11:22:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/users/395737/steven-almeroth>
+{'url': 'https://stackoverflow.com/users/395737/steven-almeroth'}
+2018-06-05 11:22:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/26987945/python-scrapy-scrapping-data-from-multiple-website-urls>
+{'url': 'https://stackoverflow.com/questions/26987945/python-scrapy-scrapping-data-from-multiple-website-urls'}
+2018-06-05 11:22:30 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/32456731#32456731> (failed 1 times): 503 Service Unavailable
+2018-06-05 11:22:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider?answertab=votes#tab-top> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider?answertab=oldest#tab-top> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider?answertab=votes>
+{'url': 'https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider?answertab=votes'}
+2018-06-05 11:22:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider?answertab=oldest>
+{'url': 'https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider?answertab=oldest'}
+2018-06-05 11:22:31 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://stackoverflow.com/users?tab=reputation&filter=all> from <GET https://stackoverflow.com/users>
+2018-06-05 11:22:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/32541281#32541281> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/32541281>
+{'url': 'https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/32541281'}
+2018-06-05 11:22:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider?answertab=active#tab-top> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider?answertab=active>
+{'url': 'https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider?answertab=active'}
+2018-06-05 11:22:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/41123138#41123138> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/tags> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/41123138>
+{'url': 'https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/41123138'}
+2018-06-05 11:22:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/tags>
+{'url': 'https://stackoverflow.com/tags'}
+2018-06-05 11:22:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/jobs?med=site-ui&ref=jobs-tab> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/teams> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/17307718/pass-scrapy-spider-a-list-of-urls-to-crawl-via-txt-file> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/15618520#15618520> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/jobs?med=site-ui&ref=jobs-tab>
+{'url': 'https://stackoverflow.com/jobs?med=site-ui&ref=jobs-tab'}
+2018-06-05 11:22:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/teams>
+{'url': 'https://stackoverflow.com/teams'}
+2018-06-05 11:22:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/17307718/pass-scrapy-spider-a-list-of-urls-to-crawl-via-txt-file>
+{'url': 'https://stackoverflow.com/questions/17307718/pass-scrapy-spider-a-list-of-urls-to-crawl-via-txt-file'}
+2018-06-05 11:22:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/15618520>
+{'url': 'https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/15618520'}
+2018-06-05 11:22:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions>
+{'url': 'https://stackoverflow.com/questions'}
+2018-06-05 11:22:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/users?tab=reputation&filter=all> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/jobs/directory/developer-jobs> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/users?tab=reputation&filter=all>
+{'url': 'https://stackoverflow.com/users?tab=reputation&filter=all'}
+2018-06-05 11:22:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/legal/cookie-policy> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/jobs/directory/developer-jobs>
+{'url': 'https://stackoverflow.com/jobs/directory/developer-jobs'}
+2018-06-05 11:22:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/legal/cookie-policy>
+{'url': 'https://stackoverflow.com/legal/cookie-policy'}
+2018-06-05 11:22:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider>
+{'url': 'https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider'}
+2018-06-05 11:22:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/32456731#32456731> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:22:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/32456731>
+{'url': 'https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider/32456731'}
+2018-06-05 11:23:13 [scrapy.extensions.logstats] INFO: Crawled 75 pages (at 75 pages/min), scraped 67 items (at 67 items/min)
+2018-06-05 11:23:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://stackoverflow.com/questions/31394328/how-to-use-a-decorator-to-enable-a-spider-to-distinguish-between-scrapy-pipeline> (failed 1 times): 503 Service Unavailable
+2018-06-05 11:23:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://stackoverflow.com/questions/38371212/how-to-pass-a-user-defined-argument-to-a-scrapy-spider-when-running-it-from-a-sc?noredirect=1> (failed 1 times): 503 Service Unavailable
+2018-06-05 11:23:28 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://stackoverflow.com/questions/35748061/how-to-stop-scrapy-spider-after-certain-number-of-requests> (failed 1 times): 503 Service Unavailable
+2018-06-05 11:23:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/31394328/how-to-use-a-decorator-to-enable-a-spider-to-distinguish-between-scrapy-pipeline> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:23:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/31394328/how-to-use-a-decorator-to-enable-a-spider-to-distinguish-between-scrapy-pipeline>
+{'url': 'https://stackoverflow.com/questions/31394328/how-to-use-a-decorator-to-enable-a-spider-to-distinguish-between-scrapy-pipeline'}
+2018-06-05 11:23:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/38371212/how-to-pass-a-user-defined-argument-to-a-scrapy-spider-when-running-it-from-a-sc?noredirect=1> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:23:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/38371212/how-to-pass-a-user-defined-argument-to-a-scrapy-spider-when-running-it-from-a-sc?noredirect=1>
+{'url': 'https://stackoverflow.com/questions/38371212/how-to-pass-a-user-defined-argument-to-a-scrapy-spider-when-running-it-from-a-sc?noredirect=1'}
+2018-06-05 11:23:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://stackoverflow.com/questions/35748061/how-to-stop-scrapy-spider-after-certain-number-of-requests> (referer: https://stackoverflow.com/questions/15611605/how-to-pass-a-user-defined-argument-in-scrapy-spider)
+2018-06-05 11:23:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://stackoverflow.com/questions/35748061/how-to-stop-scrapy-spider-after-certain-number-of-requests>
+{'url': 'https://stackoverflow.com/questions/35748061/how-to-stop-scrapy-spider-after-certain-number-of-requests'}
+2018-06-05 11:23:31 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-06-05 11:23:36 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 16,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 16,
+ 'downloader/request_bytes': 50754,
+ 'downloader/request_count': 109,
+ 'downloader/request_method_count/GET': 109,
+ 'downloader/response_bytes': 2119184,
+ 'downloader/response_count': 109,
+ 'downloader/response_status_count/200': 77,
+ 'downloader/response_status_count/302': 24,
+ 'downloader/response_status_count/404': 1,
+ 'downloader/response_status_count/503': 7,
+ 'dupefilter/filtered': 11,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 6, 5, 8, 23, 36, 116559),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'item_scraped_count': 70,
+ 'log_count/DEBUG': 285,
+ 'log_count/INFO': 9,
+ 'offsite/domains': 88,
+ 'offsite/filtered': 120,
+ 'request_depth_max': 1,
+ 'response_received_count': 78,
+ 'retry/count': 7,
+ 'retry/reason_count/503 Service Unavailable': 7,
+ 'scheduler/dequeued': 118,
+ 'scheduler/dequeued/memory': 118,
+ 'scheduler/enqueued': 118,
+ 'scheduler/enqueued/memory': 118,
+ 'start_time': datetime.datetime(2018, 6, 5, 8, 22, 13, 507186)}
+2018-06-05 11:23:36 [scrapy.core.engine] INFO: Spider closed (finished)

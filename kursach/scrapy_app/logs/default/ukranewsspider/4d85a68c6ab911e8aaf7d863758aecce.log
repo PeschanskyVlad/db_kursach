@@ -1,0 +1,114 @@
+2018-06-08 04:14:49 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapy_app)
+2018-06-08 04:14:49 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.17134-SP0
+2018-06-08 04:14:50 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_app', 'LOG_FILE': 'logs\\default\\ukranewsspider\\4d85a68c6ab911e8aaf7d863758aecce.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2018-06-08 04:14:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-06-08 04:14:50 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-06-08 04:14:50 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-06-08 04:14:50 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.Pipeline']
+2018-06-08 04:14:50 [scrapy.core.engine] INFO: Spider opened
+2018-06-08 04:14:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-08 04:14:50 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-06-08 04:14:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/robots.txt> (referer: None)
+2018-06-08 04:14:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/archiv/tab/news/> (referer: None)
+2018-06-08 04:14:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567615-stoltenberg-rasskazal-chto-poroshenko-pryglasyat-na-sammyt-nato-v-bryussel> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567588-rade-ne-khvatylo-golosov-chtob-vvesty-cenzuru-futbola> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567615-stoltenberg-rasskazal-chto-poroshenko-pryglasyat-na-sammyt-nato-v-bryussel>
+None
+2018-06-08 04:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567591-ukrayna-pryvlechet-ye475-mln-kredyta-dlya-zakupky-vertoletov-u-francyy> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567588-rade-ne-khvatylo-golosov-chtob-vvesty-cenzuru-futbola>
+None
+2018-06-08 04:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567594-stalo-yzvestno-chto-koroleva-elyzaveta-podaryla-garry-y-megan-na-svadbu> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567591-ukrayna-pryvlechet-ye475-mln-kredyta-dlya-zakupky-vertoletov-u-francyy>
+None
+2018-06-08 04:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567585-v-kyeve-avtomobyl-zavys-nad-2-metrovoy-yamoy-yz-za-proryva-truby> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567586-kyevsovet-planyruet-vydelyt-bolee-700-tys-grn-na-novyy-proekt-ukreplenyya-pochtovoy-ploshhady> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567579-nacyonalnye-druzhyny-razgromyly-lager-romov-okkupyrovavshykh-goloseevskyy-park> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567594-stalo-yzvestno-chto-koroleva-elyzaveta-podaryla-garry-y-megan-na-svadbu>
+None
+2018-06-08 04:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567581-u-dyrektora-rya-novosty-ukrayna-vyshynskogo-yzyaly-pystolet-y-200-tysyach> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567574-v-lnr-vvely-poshlyny-na-pyvo-yz-dnr> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567565-denysova-poprosyla-sovetnyka-putyna-fedotova-o-vstrechy-s-sushhenko-y-velylyaevym> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567598-strany-nato-utverdyly-novuyu-programmu-o-povyshenyy-gotovnosty-syl-bystro-reagyrovat> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567600-na-shpycbergene-belyy-medved-zabralsya-na-sklad-y-zastryal-v-okne> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567596-vera-chernysh-pochemu-bolshye-kompanyy-prodolzhayut-obyzhat-malenkykh-klyentov> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567583-ot-tyazheloy-bolezny-skonchalsya-razrabotchyk-samoleta-mryya-vyktor-tolmachev> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567585-v-kyeve-avtomobyl-zavys-nad-2-metrovoy-yamoy-yz-za-proryva-truby>
+None
+2018-06-08 04:14:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567586-kyevsovet-planyruet-vydelyt-bolee-700-tys-grn-na-novyy-proekt-ukreplenyya-pochtovoy-ploshhady>
+None
+2018-06-08 04:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567579-nacyonalnye-druzhyny-razgromyly-lager-romov-okkupyrovavshykh-goloseevskyy-park>
+None
+2018-06-08 04:14:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567605-sbu-zaderzhala-4-muzhchyn-kotorye-prytvoryalys-sbushnykamy-y-vymogaly-dengy> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567607-na-zakarpate-obyavyly-podozrenye-zhyvoderu-kotoryy-yzdevalsya-nad-konem> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567609-polycyya-otkryla-delo-po-faktu-razgroma-lagerya-romov-v-goloseevskom-parke> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567611-tramp-zayavyl-chto-kym-chen-yn-mozhet-pryekhat-v-ssha> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567603-vydeo-dnya-rossyyskye-aktery-v-podderzhku-sencova-prochytaly-ego-rasskaz> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ukranews.com/news/567613-zammehra-cherkas-y-zama-nachalnyka-departamenta-cherkasskogo-gorsoveta-podozrevayut-v-prysvoenyy-3> (referer: https://ukranews.com/archiv/tab/news/)
+2018-06-08 04:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567581-u-dyrektora-rya-novosty-ukrayna-vyshynskogo-yzyaly-pystolet-y-200-tysyach>
+None
+2018-06-08 04:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567574-v-lnr-vvely-poshlyny-na-pyvo-yz-dnr>
+None
+2018-06-08 04:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567565-denysova-poprosyla-sovetnyka-putyna-fedotova-o-vstrechy-s-sushhenko-y-velylyaevym>
+None
+2018-06-08 04:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567598-strany-nato-utverdyly-novuyu-programmu-o-povyshenyy-gotovnosty-syl-bystro-reagyrovat>
+None
+2018-06-08 04:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567600-na-shpycbergene-belyy-medved-zabralsya-na-sklad-y-zastryal-v-okne>
+None
+2018-06-08 04:14:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567596-vera-chernysh-pochemu-bolshye-kompanyy-prodolzhayut-obyzhat-malenkykh-klyentov>
+None
+2018-06-08 04:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567583-ot-tyazheloy-bolezny-skonchalsya-razrabotchyk-samoleta-mryya-vyktor-tolmachev>
+None
+2018-06-08 04:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567605-sbu-zaderzhala-4-muzhchyn-kotorye-prytvoryalys-sbushnykamy-y-vymogaly-dengy>
+None
+2018-06-08 04:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567607-na-zakarpate-obyavyly-podozrenye-zhyvoderu-kotoryy-yzdevalsya-nad-konem>
+None
+2018-06-08 04:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567609-polycyya-otkryla-delo-po-faktu-razgroma-lagerya-romov-v-goloseevskom-parke>
+None
+2018-06-08 04:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567611-tramp-zayavyl-chto-kym-chen-yn-mozhet-pryekhat-v-ssha>
+None
+2018-06-08 04:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567603-vydeo-dnya-rossyyskye-aktery-v-podderzhku-sencova-prochytaly-ego-rasskaz>
+None
+2018-06-08 04:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://ukranews.com/news/567613-zammehra-cherkas-y-zama-nachalnyka-departamenta-cherkasskogo-gorsoveta-podozrevayut-v-prysvoenyy-3>
+None
+2018-06-08 04:14:54 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-06-08 04:14:54 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 8143,
+ 'downloader/request_count': 22,
+ 'downloader/request_method_count/GET': 22,
+ 'downloader/response_bytes': 892550,
+ 'downloader/response_count': 22,
+ 'downloader/response_status_count/200': 22,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 6, 8, 1, 14, 54, 788185),
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 43,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 1,
+ 'response_received_count': 22,
+ 'scheduler/dequeued': 21,
+ 'scheduler/dequeued/memory': 21,
+ 'scheduler/enqueued': 21,
+ 'scheduler/enqueued/memory': 21,
+ 'start_time': datetime.datetime(2018, 6, 8, 1, 14, 50, 826238)}
+2018-06-08 04:14:54 [scrapy.core.engine] INFO: Spider closed (finished)

@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>News servise</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="{%static "css/index.css"%}">
+</head>
+
+<body>
+<div class="header">
+    <div class="inline left"><h4 style="color:white"><a href="/">News spiders service</a></h4></div>
+    <div class="inline right">
+         <div class="btn-group">
+            <button type="button" class="btn btn-info" id = "confirm_button_u">Украньюс</button>
+            <button type="button" class="btn btn-info" id = "confirm_button_k">Корр</button>
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Инфо</button>
+         </div>
+
+
+
+    </div>
+
+
+
+
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Основная информация</h4>
+                                </div>
+                                <div class="modal-body">
+                                    Чет за инфа
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+</div>
+
+<div class="container">
+    <div class="panel panel-default">
+
+        <div class="panel-body">
+        <h3>Все новости:</h3>
+
+        <form class="example" action="/all/" method='POST'>
+                        {% csrf_token %}
+                        <input type="text" placeholder="" name="search" id="search">
+                        <button type="submit">Поиск</button>
+                    </form>
+
+        {% if is_search %}
+            <br><br>
+                        <a href='/all' type="button" class="btn btn-info">К основному списку</a>
+                        <h3 align="center">
+                                       {% if is_empty  %}
+                                       Отсутствуют совпадения по поиску с указаными параметрами "{{ search }}"
+                                           {% else %}
+                                           Результати поиска за запросом "{{ search }}"
+                                           {% endif %}
+                        </h3>
+
+
+        {% endif %}
+        <div style="margin-top: 30px"></div>
+
+            {% for i in all %}
+        <div class="post linkblock" onclick="location.href='{{ i.link }}';">
+              <b>{{ i.title }}</b>  <br>
+               Категория:&nbsp{{ i.category }}<br>
+               Дата:&nbsp <time>{{ i.date }}</time> &nbspПросмотры:&nbsp{{ i.views }}<br>
+                {{ i.text }}<br>
+            <hr />
+          </div>
+
+        {% endfor %}
+
+
+        <div><br></div>
+
+    <div id="paginator" class="linkC">
+  <div class="tablica">
+        <div class="yacheika" id="first"><<</div>
+        <div class="yacheika" id="previous"><</div>
+        <div class="yacheika" style="cursor: default" id="txt"></div>
+        <div class="yacheika" id="next">></div>
+        <div class="yacheika" id="last">>></div>
+        </div>
+    </div>
+
+</div></div></div>
+
+
+</body>
+
+
+<script src="{% static "js/index.js" %}"></script>
+<script src="{% static "js/paginate.js" %}"></script>
+</html>

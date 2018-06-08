@@ -1,0 +1,486 @@
+2018-06-07 23:50:53 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapy_app)
+2018-06-07 23:50:53 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.17134-SP0
+2018-06-07 23:50:53 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_app', 'LOG_FILE': 'logs\\default\\korrspider\\741bec746a9411e89455d863758aecce.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2018-06-07 23:50:54 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-06-07 23:50:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-06-07 23:50:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-06-07 23:50:54 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.Pipeline']
+2018-06-07 23:50:54 [scrapy.core.engine] INFO: Spider opened
+2018-06-07 23:50:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-07 23:50:54 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-06-07 23:50:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/robots.txt> (referer: None)
+2018-06-07 23:50:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/all/2018/june/7/> (referer: None)
+2018-06-07 23:50:54 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://korrespondent.net/all/2018/june/7/p2/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-06-07 23:50:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/all/2018/june/7/p7/> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:50:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/all/2018/june/7/p2/> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:50:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/all/2018/june/7/> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:50:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/all/2018/june/7/p5/> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:50:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/all/2018/june/7/p6/> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:50:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/worldabus/3978100-sovbez-oon-prynial-zaiavlenye-po-sytuatsyy-v-ukrayne> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:50:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978096-vzryv-v-bahdade-unes-zhyzny-ne-menee-18-chelovek> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:50:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978102-kndr-lykvydyrovala-yadernyi-polyhon-ykhary-smy> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:50:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978104-yzverzhenye-vulkana-v-hvatemale-pohybly-pochty-100-chelovek> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:50:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/worldabus/3978100-sovbez-oon-prynial-zaiavlenye-po-sytuatsyy-v-ukrayne>
+None
+2018-06-07 23:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/sport/boks/3978105-holovkyna-lyshyly-tytula-chempyona-za-otkaz-dratsia-s-ukrayntsem> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978098-pornoaktrysa-obvynyla-svoeho-advokata-v-shovore-s-yurystom-trampa> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/all/2018/june/7/p3/> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978107-yran-nachal-stroyt-tsentryfuhy-dlia-obohaschenyia-urana> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/sport/basketball/3978108-holden-steit-dobyl-vyezdnuui-pobedu-nad-klyvlendom> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/all/2018/june/7/p4/> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978101-tramp-pomyloval-zhenschynu-po-prosbe-kym-kardashian> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/economics/3978103-v-es-razreshyly-yhnoryrovat-sanktsyy-protyv-yrana> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:50:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978096-vzryv-v-bahdade-unes-zhyzny-ne-menee-18-chelovek>
+None
+2018-06-07 23:50:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978102-kndr-lykvydyrovala-yadernyi-polyhon-ykhary-smy>
+None
+2018-06-07 23:50:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978104-yzverzhenye-vulkana-v-hvatemale-pohybly-pochty-100-chelovek>
+None
+2018-06-07 23:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/odessa/3978353-teriaem-odessu-nardep-obratylsia-v-snbo> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/showbiz/music/3978355-akter-serhei-bezrukov-stal-solystom-rok-hruppy> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978356-v-vynnytskoi-oblasty-zaderzhaly-uchastnyka-shturma-donetskoho-aeroporta> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978362-lutsenko-anonsyroval-novoe-podozrenye-po-delu-babchenko> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978109-nato-otkazalos-pryniat-katar> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/events/3978110-ytohy-0606-defolta-ne-budet-y-reshenye-po-mn17> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:50:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978111-okolo-50-myhrantov-pohybly-u-berehov-yemena> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:50:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/sport/boks/3978105-holovkyna-lyshyly-tytula-chempyona-za-otkaz-dratsia-s-ukrayntsem>
+None
+2018-06-07 23:50:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978117-vpervye-bolshynstvo-postov-v-pravytelstve-yspanyy-zanialy-zhenschyny> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:50:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978098-pornoaktrysa-obvynyla-svoeho-advokata-v-shovore-s-yurystom-trampa>
+None
+2018-06-07 23:50:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978107-yran-nachal-stroyt-tsentryfuhy-dlia-obohaschenyia-urana>
+None
+2018-06-07 23:50:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/sport/basketball/3978108-holden-steit-dobyl-vyezdnuui-pobedu-nad-klyvlendom>
+None
+2018-06-07 23:50:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978101-tramp-pomyloval-zhenschynu-po-prosbe-kym-kardashian>
+None
+2018-06-07 23:50:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/economics/3978103-v-es-razreshyly-yhnoryrovat-sanktsyy-protyv-yrana>
+None
+2018-06-07 23:50:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978119-za-sutky-na-donbasse-pohybly-dvoe-voennykh> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:50:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978124-vybran-sostav-obschestvennoho-kontrolia-nabu> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:50:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/tech/space/3978128-uchenye-vyiasnyly-kak-luna-rastianula-den-na-zemle> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:50:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/dnepr/3978132-na-dnepropetrovschyne-dyrektor-predpryiatyia-popalsia-na-vziatke> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:50:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978137-tramp-obvynyl-kanadu-v-podzhohe-beloho-doma-smy> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:50:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/showbiz/cinema/3978140-umerla-kyra-muratova-byohrafyia-rezhyssera> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:50:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978141-brytanskyi-komyk-vysmeial-ubyistvo-babchenko> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:50:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/odessa/3978353-teriaem-odessu-nardep-obratylsia-v-snbo>
+None
+2018-06-07 23:50:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/showbiz/music/3978355-akter-serhei-bezrukov-stal-solystom-rok-hruppy>
+None
+2018-06-07 23:50:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978356-v-vynnytskoi-oblasty-zaderzhaly-uchastnyka-shturma-donetskoho-aeroporta>
+None
+2018-06-07 23:50:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978362-lutsenko-anonsyroval-novoe-podozrenye-po-delu-babchenko>
+None
+2018-06-07 23:50:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978109-nato-otkazalos-pryniat-katar>
+None
+2018-06-07 23:50:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/events/3978110-ytohy-0606-defolta-ne-budet-y-reshenye-po-mn17>
+None
+2018-06-07 23:50:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978111-okolo-50-myhrantov-pohybly-u-berehov-yemena>
+None
+2018-06-07 23:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978171-poiavylos-foto-modernyzyrovannoho-dlia-vsu-shturmovyka> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:50:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978117-vpervye-bolshynstvo-postov-v-pravytelstve-yspanyy-zanialy-zhenschyny>
+None
+2018-06-07 23:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/motors/3978172-unyversal-Peugeot-508-predstavyly-ofytsyalno> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/companies/3978176-v-hollandyy-set-supermarketov-otkazyvaetsia-ot-prodazhy-syharet> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/showbiz/cinema/3978181-treiler-o-temnokozhem-cheloveke-pauke-vzorval-set> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978182-snbo-snymet-vse-ohranychenyia-na-zakupky-vooruzhenyi> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978186-vlasty-polshy-otreahyrovaly-na-skandalnoe-zaiavlenye-ob-ukrayntsakh> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:50:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978187-v-apparate-natspolytsyy-ukrayny-nashly-moshennyka> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:50:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978119-za-sutky-na-donbasse-pohybly-dvoe-voennykh>
+None
+2018-06-07 23:50:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978124-vybran-sostav-obschestvennoho-kontrolia-nabu>
+None
+2018-06-07 23:50:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/tech/space/3978128-uchenye-vyiasnyly-kak-luna-rastianula-den-na-zemle>
+None
+2018-06-07 23:50:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/dnepr/3978132-na-dnepropetrovschyne-dyrektor-predpryiatyia-popalsia-na-vziatke>
+None
+2018-06-07 23:50:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978137-tramp-obvynyl-kanadu-v-podzhohe-beloho-doma-smy>
+None
+2018-06-07 23:50:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/showbiz/cinema/3978140-umerla-kyra-muratova-byohrafyia-rezhyssera>
+None
+2018-06-07 23:50:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978141-brytanskyi-komyk-vysmeial-ubyistvo-babchenko>
+None
+2018-06-07 23:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978175-pod-odessoi-pianyi-vodytel-vo-vremia-pohony-brosal-v-polytsyui-butylky> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/russia/3978251-putyn-otsenyl-veroiatnost-tretei-myrovoi-voiny> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:50:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978171-poiavylos-foto-modernyzyrovannoho-dlia-vsu-shturmovyka>
+None
+2018-06-07 23:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/3978222-slon-razozlylsia-y-atakoval-lodku-s-turystamy> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:50:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/russia/3978223-fyfa-zapretyla-chycherynoi-vystupat-na-meropryiatyiakh-chm-2018> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/kiev/3978227-v-kyeve-sozdaly-ohromnyi-herb-ukrayny-yz-roz> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978228-kolchenko-prekratyl-holodovku-advokat> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978232-v-ytalyy-polytsyia-yziala-svyshe-10-tonn-hashysha> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978234-ukrayntsy-sezdyly-v-es-po-bezvyzu-500-tysiach-raz> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:50:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/motors/3978172-unyversal-Peugeot-508-predstavyly-ofytsyalno>
+None
+2018-06-07 23:50:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/companies/3978176-v-hollandyy-set-supermarketov-otkazyvaetsia-ot-prodazhy-syharet>
+None
+2018-06-07 23:50:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/showbiz/cinema/3978181-treiler-o-temnokozhem-cheloveke-pauke-vzorval-set>
+None
+2018-06-07 23:50:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978182-snbo-snymet-vse-ohranychenyia-na-zakupky-vooruzhenyi>
+None
+2018-06-07 23:50:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978186-vlasty-polshy-otreahyrovaly-na-skandalnoe-zaiavlenye-ob-ukrayntsakh>
+None
+2018-06-07 23:50:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978187-v-apparate-natspolytsyy-ukrayny-nashly-moshennyka>
+None
+2018-06-07 23:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/event/eventsculture/3978235-Atlas-Weekend> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:50:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/showbiz/3978237-televeduschaia-snezhana-ehorova-popala-v-bolnytsu> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:50:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978175-pod-odessoi-pianyi-vodytel-vo-vremia-pohony-brosal-v-polytsyui-butylky>
+None
+2018-06-07 23:51:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/russia/3978251-putyn-otsenyl-veroiatnost-tretei-myrovoi-voiny>
+None
+2018-06-07 23:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/russia/3978239-putyn-o-torhovoi-voine-trampa-s-es-kushat-podano> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978240-synoptyky-rasskazaly-kohda-v-ukraynu-vernetsia-teplo> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/politics/3978244-rada-sozdala-antykorruptsyonnyi-sud> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/kharkov/3978245-v-kharkove-tretyi-den-podriad-mynyruuit-piat-byznes-tsentrov> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978270-v-buenos-airese-nashly-mertvoi-sestru-korolevy-nyderlandov> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978274-rada-uvolyla-danyluika> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/3978222-slon-razozlylsia-y-atakoval-lodku-s-turystamy>
+None
+2018-06-07 23:51:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/russia/3978223-fyfa-zapretyla-chycherynoi-vystupat-na-meropryiatyiakh-chm-2018>
+None
+2018-06-07 23:51:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/kiev/3978227-v-kyeve-sozdaly-ohromnyi-herb-ukrayny-yz-roz>
+None
+2018-06-07 23:51:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978228-kolchenko-prekratyl-holodovku-advokat>
+None
+2018-06-07 23:51:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978232-v-ytalyy-polytsyia-yziala-svyshe-10-tonn-hashysha>
+None
+2018-06-07 23:51:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978234-ukrayntsy-sezdyly-v-es-po-bezvyzu-500-tysiach-raz>
+None
+2018-06-07 23:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/kiev/3978275-v-kyeve-upavshyi-s-mosta-kusok-betona-travmyroval-passazhyra-avto> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/3978276-National-Geographic-vypustyla-futbolky-yz-musora> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:00 [scrapy.core.scraper] ERROR: Spider error processing <GET https://korrespondent.net/event/eventsculture/3978235-Atlas-Weekend> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+Traceback (most recent call last):
+  File "c:\users\v144\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "c:\users\v144\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "c:\users\v144\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "c:\users\v144\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "c:\users\v144\appdata\local\programs\python\python36-32\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Labs\Petrashenko\2semestr\kursach\kursach\scrapy_app\scrapy_app\spiders\korr_spider.py", line 23, in scrap_page
+    yield {'title': title, 'time': parse_date(time.split(",")[1].strip()), 'views':views, 'text': text.strip(), 'link': link}
+AttributeError: 'NoneType' object has no attribute 'split'
+2018-06-07 23:51:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/showbiz/3978237-televeduschaia-snezhana-ehorova-popala-v-bolnytsu>
+None
+2018-06-07 23:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/kiev/3978278-natsyonalysty-zablokyrovaly-kyevsovet> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/odessa/3978289-chast-odessy-obestochena-yz-za-avaryy> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/showbiz/music/3978290-ledy-haha-spela-v-treilere-fylma-bredly-kupera> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/russia/3978293-bestsennyi-opyt-putyn-o-syryy-y-novom-vooruzhenyy> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978294-na-donbasse-v-punkte-propuska-u-ukrayntsa-otobraly-yakhtu> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/russia/3978239-putyn-o-torhovoi-voine-trampa-s-es-kushat-podano>
+None
+2018-06-07 23:51:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978240-synoptyky-rasskazaly-kohda-v-ukraynu-vernetsia-teplo>
+None
+2018-06-07 23:51:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/politics/3978244-rada-sozdala-antykorruptsyonnyi-sud>
+None
+2018-06-07 23:51:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/kharkov/3978245-v-kharkove-tretyi-den-podriad-mynyruuit-piat-byznes-tsentrov>
+None
+2018-06-07 23:51:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978270-v-buenos-airese-nashly-mertvoi-sestru-korolevy-nyderlandov>
+None
+2018-06-07 23:51:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978274-rada-uvolyla-danyluika>
+None
+2018-06-07 23:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/companies/3978297-ukraynskyi-loukoster-udvoyl-svoi-park-samoletov> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/russia/3978253-putyn-zaiavyl-o-tiazhelykh-posledstvyiakh-dlia-ukrayny> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:51:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/zaporozhye/3978285-v-zaporozhe-rukovodytel-ynstytuta-popalas-na-vziatke> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/kiev/3978275-v-kyeve-upavshyi-s-mosta-kusok-betona-travmyroval-passazhyra-avto>
+None
+2018-06-07 23:51:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/3978276-National-Geographic-vypustyla-futbolky-yz-musora>
+None
+2018-06-07 23:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978254-v-lnr-zaiavyly-o-shesty-ranenykh-passazhyrakh-avtobusa-v-rezultate-obstrela> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978255-avakov-predlahaet-zapretyt-holosovat-zhyteliam-donbassa> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978260-rada-yzbrala-audytora-nabu> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/politics/3978262-antykorruptsyonnaia-struktura-sformyrovana-poroshenko> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/economics/3978263-ukrayna-snyzyla-tranzyt-nefty-v-evropu> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:51:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/kiev/3978278-natsyonalysty-zablokyrovaly-kyevsovet>
+None
+2018-06-07 23:51:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/odessa/3978289-chast-odessy-obestochena-yz-za-avaryy>
+None
+2018-06-07 23:51:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/showbiz/music/3978290-ledy-haha-spela-v-treilere-fylma-bredly-kupera>
+None
+2018-06-07 23:51:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/russia/3978293-bestsennyi-opyt-putyn-o-syryy-y-novom-vooruzhenyy>
+None
+2018-06-07 23:51:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978294-na-donbasse-v-punkte-propuska-u-ukrayntsa-otobraly-yakhtu>
+None
+2018-06-07 23:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978268-v-polshe-armyia-sobyraet-dannye-o-natsmenshynstvakh> (referer: https://korrespondent.net/all/2018/june/7/p4/)
+2018-06-07 23:51:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978302-v-lytve-stolknulys-bronevyky-ssha-13-postradavshykh> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978305-avakov-nazval-chyslo-vorov-v-zakone-v-ukrayne> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/companies/3978297-ukraynskyi-loukoster-udvoyl-svoi-park-samoletov>
+None
+2018-06-07 23:51:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/russia/3978253-putyn-zaiavyl-o-tiazhelykh-posledstvyiakh-dlia-ukrayny>
+None
+2018-06-07 23:51:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/zaporozhye/3978285-v-zaporozhe-rukovodytel-ynstytuta-popalas-na-vziatke>
+None
+2018-06-07 23:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/3978308-amerykantsa-ukusyla-holova-ubytoi-ym-zmey> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/odessa/3978309-v-odesse-muzhchyna-pohyb-pod-kolesamy-tramvaia> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/russia/3978312-o-nastoiaschem-y-buduschem-ukrayny-priamaia-lynyia-putyna> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978316-v-kharkovskoi-oblasty-luidy-perekryly-trassu-y-poshly-pyketyrovat-polytsyui> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/3978319-v-brytanyy-uhnaly-yzvestnyi-pornomobyl> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978254-v-lnr-zaiavyly-o-shesty-ranenykh-passazhyrakh-avtobusa-v-rezultate-obstrela>
+None
+2018-06-07 23:51:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978255-avakov-predlahaet-zapretyt-holosovat-zhyteliam-donbassa>
+None
+2018-06-07 23:51:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978260-rada-yzbrala-audytora-nabu>
+None
+2018-06-07 23:51:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/politics/3978262-antykorruptsyonnaia-struktura-sformyrovana-poroshenko>
+None
+2018-06-07 23:51:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/economics/3978263-ukrayna-snyzyla-tranzyt-nefty-v-evropu>
+None
+2018-06-07 23:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/economics/3978320-v-ukrayne-yz-za-zasukhy-pod-uhrozoi-50-zernovykh> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/economics/3978321-ukrayna-sokratyla-eksport-svynyny> (referer: https://korrespondent.net/all/2018/june/7/p3/)
+2018-06-07 23:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/3978189-emyly-ratakovsky-v-smelom-bykyny-pokoryla-set> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:51:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978268-v-polshe-armyia-sobyraet-dannye-o-natsmenshynstvakh>
+None
+2018-06-07 23:51:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978302-v-lytve-stolknulys-bronevyky-ssha-13-postradavshykh>
+None
+2018-06-07 23:51:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978305-avakov-nazval-chyslo-vorov-v-zakone-v-ukrayne>
+None
+2018-06-07 23:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/politics/3978190-naiem-rasskazal-o-kompromysse-s-mvf-po-antykorsudu> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978193-premer-chekhyy-nameren-sudytsia-so-slovakyei> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978380-kabmyn-naznachyl-yo-mynystra-fynansov> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978382-venetsyanskaia-komyssyia-pryvetstvovala-sozdanye-antykorruptsyonnoho-suda> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/financial/3978384-kurs-valuit-na-8-yuinia-nbu-snova-opustyl-hryvnu> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/3978308-amerykantsa-ukusyla-holova-ubytoi-ym-zmey>
+None
+2018-06-07 23:51:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/odessa/3978309-v-odesse-muzhchyna-pohyb-pod-kolesamy-tramvaia>
+None
+2018-06-07 23:51:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/russia/3978312-o-nastoiaschem-y-buduschem-ukrayny-priamaia-lynyia-putyna>
+None
+2018-06-07 23:51:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978316-v-kharkovskoi-oblasty-luidy-perekryly-trassu-y-poshly-pyketyrovat-polytsyui>
+None
+2018-06-07 23:51:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/3978319-v-brytanyy-uhnaly-yzvestnyi-pornomobyl>
+None
+2018-06-07 23:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978387-v-mvf-otreahyrovaly-na-otstavku-danyluika> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978393-na-donbasse-v-techenye-dnia-raneny-dvoe-voennykh> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/odessa/3978395-v-tsentre-odessy-horyt-uchylysche> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/economics/3978320-v-ukrayne-yz-za-zasukhy-pod-uhrozoi-50-zernovykh>
+None
+2018-06-07 23:51:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/economics/3978321-ukrayna-sokratyla-eksport-svynyny>
+None
+2018-06-07 23:51:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/3978189-emyly-ratakovsky-v-smelom-bykyny-pokoryla-set>
+None
+2018-06-07 23:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/lvov/3978397-vo-lvove-obrazovalas-ohromnaia-musornaia-svalka> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/companies/3978402-ukrhazdobycha-otkryla-novoe-mestorozhdenye-haza> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978403-sbu-nashla-u-vyshynskoho-pystolet-y-trudovoi-dohovor-s-rossyiskym-smy> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978408-umer-razrabotchyk-samoleta-mryia-vyktor-tolmachev> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978409-v-nato-utverdyly-sozdanye-novykh-komandovanyi> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/politics/3978190-naiem-rasskazal-o-kompromysse-s-mvf-po-antykorsudu>
+None
+2018-06-07 23:51:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978193-premer-chekhyy-nameren-sudytsia-so-slovakyei>
+None
+2018-06-07 23:51:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978380-kabmyn-naznachyl-yo-mynystra-fynansov>
+None
+2018-06-07 23:51:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978382-venetsyanskaia-komyssyia-pryvetstvovala-sozdanye-antykorruptsyonnoho-suda>
+None
+2018-06-07 23:51:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/financial/3978384-kurs-valuit-na-8-yuinia-nbu-snova-opustyl-hryvnu>
+None
+2018-06-07 23:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978413-poroshenko-pryhlasiat-na-sammyt-nato-stoltenberh> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978422-obysky-v-hfs-zhytomyrskoi-oblasty-nazvano-ymia-vladelytsy-yziatykh-deneh> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978326-evroparlament-obsudyt-delo-sentsova> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978387-v-mvf-otreahyrovaly-na-otstavku-danyluika>
+None
+2018-06-07 23:51:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978393-na-donbasse-v-techenye-dnia-raneny-dvoe-voennykh>
+None
+2018-06-07 23:51:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/odessa/3978395-v-tsentre-odessy-horyt-uchylysche>
+None
+2018-06-07 23:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978327-v-vynnytse-kopy-pohasyly-horiaschee-avto-y-byly-yzbyty-eho-khoziaynom> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/economics/3978328-shvetsyia-razreshyla-stroyt-severnyi-potok-2-smy> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/3978332-zhenschynu-transhendera-otkazalys-puskat-v-zhenskuui-razdevalku> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978334-sbu-osvobodyla-studenta-zaderzhannoho-separatystamy-za-ukraynskyi-flah> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/companies/3978338-ssha-oshtrafovaly-kytaiskuui-kompanyui-na-myllyard-dollarov> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/lvov/3978397-vo-lvove-obrazovalas-ohromnaia-musornaia-svalka>
+None
+2018-06-07 23:51:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/companies/3978402-ukrhazdobycha-otkryla-novoe-mestorozhdenye-haza>
+None
+2018-06-07 23:51:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978403-sbu-nashla-u-vyshynskoho-pystolet-y-trudovoi-dohovor-s-rossyiskym-smy>
+None
+2018-06-07 23:51:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978408-umer-razrabotchyk-samoleta-mryia-vyktor-tolmachev>
+None
+2018-06-07 23:51:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978409-v-nato-utverdyly-sozdanye-novykh-komandovanyi>
+None
+2018-06-07 23:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/odessa/3978339-v-odesse-na-dorohe-proyzoshel-konflykt-so-strelboi> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978341-na-donbasse-propaly-dvoe-voennykh> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978347-v-donetskoi-oblasty-zaochno-daly-vosem-let-sotrudnytse-mynysterstva-v-dnr> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978413-poroshenko-pryhlasiat-na-sammyt-nato-stoltenberh>
+None
+2018-06-07 23:51:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978422-obysky-v-hfs-zhytomyrskoi-oblasty-nazvano-ymia-vladelytsy-yziatykh-deneh>
+None
+2018-06-07 23:51:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978326-evroparlament-obsudyt-delo-sentsova>
+None
+2018-06-07 23:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978348-dolhozhdannyi-sud-v-chui-polzu-reshenye-rady> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978349-lutsenko-zaiavyl-o-rossyiskom-slede-v-spyske-47> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/3978350-smy-pokazaly-foto-sdelannye-v-udachnoe-vremia> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/russia/3978143-kreml-zhdet-predlozhenyi-ssha-po-myrotvortsam-ekspert> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:51:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978148-pod-chernobylem-trety-sutky-ne-mohut-potushyt-les> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:51:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978327-v-vynnytse-kopy-pohasyly-horiaschee-avto-y-byly-yzbyty-eho-khoziaynom>
+None
+2018-06-07 23:51:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/economics/3978328-shvetsyia-razreshyla-stroyt-severnyi-potok-2-smy>
+None
+2018-06-07 23:51:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/3978332-zhenschynu-transhendera-otkazalys-puskat-v-zhenskuui-razdevalku>
+None
+2018-06-07 23:51:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978334-sbu-osvobodyla-studenta-zaderzhannoho-separatystamy-za-ukraynskyi-flah>
+None
+2018-06-07 23:51:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/companies/3978338-ssha-oshtrafovaly-kytaiskuui-kompanyui-na-myllyard-dollarov>
+None
+2018-06-07 23:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/financial/3978150-v-avstralyy-poiavylsia-kryptovaluitnyi-horod> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/politics/3978153-poroshenko-pryekhal-v-radu-yz-za-antykorsuda> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:51:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978156-poiavylos-vydeo-s-rasstreliannym-v-nykolaeve> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:51:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/odessa/3978339-v-odesse-na-dorohe-proyzoshel-konflykt-so-strelboi>
+None
+2018-06-07 23:51:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978341-na-donbasse-propaly-dvoe-voennykh>
+None
+2018-06-07 23:51:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978347-v-donetskoi-oblasty-zaochno-daly-vosem-let-sotrudnytse-mynysterstva-v-dnr>
+None
+2018-06-07 23:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/gadgets/3978158-vydeo-polnostui-raskrylo-dyzain-Galaxy-Note-9> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978159-poltorak-vstretytsia-s-hensekom-nato> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978163-brytanskym-lordam-zapretyly-spat-v-parlamente> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978165-donetskaia-fyltrovalnaia-stantsyia-snova-obestochena> (referer: https://korrespondent.net/all/2018/june/7/p6/)
+2018-06-07 23:51:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978348-dolhozhdannyi-sud-v-chui-polzu-reshenye-rady>
+None
+2018-06-07 23:51:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978349-lutsenko-zaiavyl-o-rossyiskom-slede-v-spyske-47>
+None
+2018-06-07 23:51:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/3978350-smy-pokazaly-foto-sdelannye-v-udachnoe-vremia>
+None
+2018-06-07 23:51:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/russia/3978143-kreml-zhdet-predlozhenyi-ssha-po-myrotvortsam-ekspert>
+None
+2018-06-07 23:51:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978148-pod-chernobylem-trety-sutky-ne-mohut-potushyt-les>
+None
+2018-06-07 23:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/events/3978201-v-chernovtsakh-u-zdanyia-sbu-prohremel-vzryv-smy> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978208-v-hosdepe-nazvaly-ukraynu-chastui-ystorycheskoho-zapada> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978210-v-belarusy-vysokopostavlennykh-chynovnykov-zaderzhaly-za-vziatky> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:51:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/companies/3978197-yz-aeroporta-kyev-otkryvauit-novyi-rehuliarnyi-reis-v-turtsyui> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:51:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/financial/3978150-v-avstralyy-poiavylsia-kryptovaluitnyi-horod>
+None
+2018-06-07 23:51:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/politics/3978153-poroshenko-pryekhal-v-radu-yz-za-antykorsuda>
+None
+2018-06-07 23:51:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978156-poiavylos-vydeo-s-rasstreliannym-v-nykolaeve>
+None
+2018-06-07 23:51:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978212-ne-zhdaly-vulkan-nastyh-17-mln-zhytelei-hvatemaly> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:51:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978213-mynskyi-protsess-mertv-avakov> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:51:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/gadgets/3978215-v-hermanyy-sozdaly-robota-dlia-ydealnykh-obiatyi> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:51:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978217-avakov-osvobodyt-donbass-mohut-2-tysiachy-chelovek> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:51:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/gadgets/3978158-vydeo-polnostui-raskrylo-dyzain-Galaxy-Note-9>
+None
+2018-06-07 23:51:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978159-poltorak-vstretytsia-s-hensekom-nato>
+None
+2018-06-07 23:51:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978163-brytanskym-lordam-zapretyly-spat-v-parlamente>
+None
+2018-06-07 23:51:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978165-donetskaia-fyltrovalnaia-stantsyia-snova-obestochena>
+None
+2018-06-07 23:51:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/showbiz/cinema/3978425-vyshel-treiler-fylma-tainyi-dnevnyk-symona-petluiry> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978429-v-ukraynu-edut-evrodeputaty> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/odessa/3978434-napadenye-na-amerykanskoho-pevtsa-v-odesse-polytsyia-nashla-obydchyka> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/events/3978201-v-chernovtsakh-u-zdanyia-sbu-prohremel-vzryv-smy>
+None
+2018-06-07 23:51:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978208-v-hosdepe-nazvaly-ukraynu-chastui-ystorycheskoho-zapada>
+None
+2018-06-07 23:51:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978210-v-belarusy-vysokopostavlennykh-chynovnykov-zaderzhaly-za-vziatky>
+None
+2018-06-07 23:51:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/companies/3978197-yz-aeroporta-kyev-otkryvauit-novyi-rehuliarnyi-reis-v-turtsyui>
+None
+2018-06-07 23:51:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978438-tramp-nameren-pryhlasyt-kym-chen-yna-v-belyi-dom> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978220-na-hranytse-s-rossyei-obnaruzhyly-podzemnyi-truboprovod> (referer: https://korrespondent.net/all/2018/june/7/p5/)
+2018-06-07 23:51:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/city/kiev/3978441-v-kyeve-razghromyly-ocherednoi-laher-romov> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978443-delo-ob-ubyistve-buzyny-rassmotryt-sud-prysiazhnykh> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/financial/3978445-byrzhy-ssha-zakrylys-preymuschestvenno-v-mynuse> (referer: https://korrespondent.net/all/2018/june/7/)
+2018-06-07 23:51:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978212-ne-zhdaly-vulkan-nastyh-17-mln-zhytelei-hvatemaly>
+None
+2018-06-07 23:51:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978213-mynskyi-protsess-mertv-avakov>
+None
+2018-06-07 23:51:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/gadgets/3978215-v-hermanyy-sozdaly-robota-dlia-ydealnykh-obiatyi>
+None
+2018-06-07 23:51:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978217-avakov-osvobodyt-donbass-mohut-2-tysiachy-chelovek>
+None
+2018-06-07 23:51:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978368-smert-aktyvysta-pod-kharkovom-poselkovyi-holova-podal-v-otstavku> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978369-mvf-yzuchyt-zakon-ob-antykorruptsyonnom-sude> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/lifestyle/3978370-raspytye-alkoholia-doma-v-bele-poluchylo-termyn> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/showbiz/cinema/3978425-vyshel-treiler-fylma-tainyi-dnevnyk-symona-petluiry>
+None
+2018-06-07 23:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978429-v-ukraynu-edut-evrodeputaty>
+None
+2018-06-07 23:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/odessa/3978434-napadenye-na-amerykanskoho-pevtsa-v-odesse-polytsyia-nashla-obydchyka>
+None
+2018-06-07 23:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978373-pozhar-v-chernobyle-lykvydyrovaly> (referer: https://korrespondent.net/all/2018/june/7/p2/)
+2018-06-07 23:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978085-v-odesse-umerla-kyra-muratova> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978087-advokat-trampa-kym-chen-yn-umolial-prezydenta-ssha-ne-otmeniat-vstrechu> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/tech/science/3978090-uchenye-vyiasnyly-kak-poiavylys-kamennye-shliapy-u-ystukanov-ostrova-paskhy> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978438-tramp-nameren-pryhlasyt-kym-chen-yna-v-belyi-dom>
+None
+2018-06-07 23:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978220-na-hranytse-s-rossyei-obnaruzhyly-podzemnyi-truboprovod>
+None
+2018-06-07 23:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/city/kiev/3978441-v-kyeve-razghromyly-ocherednoi-laher-romov>
+None
+2018-06-07 23:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978443-delo-ob-ubyistve-buzyny-rassmotryt-sud-prysiazhnykh>
+None
+2018-06-07 23:51:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/financial/3978445-byrzhy-ssha-zakrylys-preymuschestvenno-v-mynuse>
+None
+2018-06-07 23:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/financial/3978083-fondovyi-rynok-ssha-zakrylsia-rostom> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978092-poroshenko-vyrazyl-soboleznovanyia-blyzkym-muratovoi> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:51:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978094-dva-dyplomata-ssha-postradaly-v-kytae-ot-akustycheskoi-ataky-smy> (referer: https://korrespondent.net/all/2018/june/7/p7/)
+2018-06-07 23:51:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978368-smert-aktyvysta-pod-kharkovom-poselkovyi-holova-podal-v-otstavku>
+None
+2018-06-07 23:51:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978369-mvf-yzuchyt-zakon-ob-antykorruptsyonnom-sude>
+None
+2018-06-07 23:51:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/lifestyle/3978370-raspytye-alkoholia-doma-v-bele-poluchylo-termyn>
+None
+2018-06-07 23:51:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978373-pozhar-v-chernobyle-lykvydyrovaly>
+None
+2018-06-07 23:51:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978085-v-odesse-umerla-kyra-muratova>
+None
+2018-06-07 23:51:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978087-advokat-trampa-kym-chen-yn-umolial-prezydenta-ssha-ne-otmeniat-vstrechu>
+None
+2018-06-07 23:51:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/tech/science/3978090-uchenye-vyiasnyly-kak-poiavylys-kamennye-shliapy-u-ystukanov-ostrova-paskhy>
+None
+2018-06-07 23:51:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/financial/3978083-fondovyi-rynok-ssha-zakrylsia-rostom>
+None
+2018-06-07 23:51:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978092-poroshenko-vyrazyl-soboleznovanyia-blyzkym-muratovoi>
+None
+2018-06-07 23:51:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978094-dva-dyplomata-ssha-postradaly-v-kytae-ot-akustycheskoi-ataky-smy>
+None
+2018-06-07 23:51:14 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-06-07 23:51:14 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 56498,
+ 'downloader/request_count': 145,
+ 'downloader/request_method_count/GET': 145,
+ 'downloader/response_bytes': 4622264,
+ 'downloader/response_count': 145,
+ 'downloader/response_status_count/200': 145,
+ 'dupefilter/filtered': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 6, 7, 20, 51, 14, 209278),
+ 'item_scraped_count': 135,
+ 'log_count/DEBUG': 282,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 2,
+ 'response_received_count': 145,
+ 'scheduler/dequeued': 144,
+ 'scheduler/dequeued/memory': 144,
+ 'scheduler/enqueued': 144,
+ 'scheduler/enqueued/memory': 144,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2018, 6, 7, 20, 50, 54, 80792)}
+2018-06-07 23:51:14 [scrapy.core.engine] INFO: Spider closed (finished)

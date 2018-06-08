@@ -1,0 +1,180 @@
+.modebar{
+      display: none !important;
+}
+
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #214371;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #214364;
+}
+
+.container{
+     margin-top:30px;
+}
+
+body{
+	background-color: #ecf0f1;
+    overflow-y: scroll;
+}
+
+.inline{
+    display:inline-block;
+}
+.left{
+     float: left;
+     left: 10px;
+}
+.right{
+     float: right;
+     margin-right: 10px;
+}
+
+.post-calendar{
+    position: absolute;
+    float: right;
+
+    width: 100px;
+    margin-top: 30px
+}
+
+.header{
+    width:100%;
+    background-color: #214371;
+    top:0;
+    display: table;
+    padding: 12px;
+}
+
+.left-block{
+    border-radius: 7px;
+    padding: 12px;
+    width: 96%;
+    background-color: white;
+}
+
+
+.center-block{
+    border-radius: 7px;
+    padding: 12px;
+    width: 96%;
+    background-color: white;
+}
+
+.right-block{
+    border-radius: 7px;
+    padding: 12px;
+    width: 96%;
+    background-color: white;
+}
+.col-xs-4 {
+        margin-top:30px;
+    }
+
+.col-xs-2 {
+        margin-top:30px;
+    }
+
+.col-xs-6 {
+        margin-top:30px;
+    }
+
+.col-xs-5 {
+        margin-top:30px;
+    }
+
+#calendar2 {
+  width: 100%;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+}
+#calendar2 thead tr:last-child {
+  font-size: small;
+  color: rgb(85, 85, 85);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+  color: rgb(50, 50, 50);
+}
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+  cursor: pointer;
+}
+#calendar2 tbody td {
+  color: rgb(44, 86, 122);
+}
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar2 tbody td.today {
+  background: rgb(220, 0, 0);
+  color: #fff;
+}
+
+
+.yacheika {
+  display: table-cell;
+  color: #fff;
+  border: 2px  black;
+  background: #214371;
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  -moz-user-select: none;
+ -khtml-user-select: none;
+ user-select: none;
+}
+
+.tablica {
+  display: table;
+  width: 100%;
+  border-spacing: 10px 0px;
+}
+
+.linkblock {cursor:pointer}
+
+.linkC{
+
+padding: 10px;
+  width: 50%;
+  margin:0 auto;
+
+  margin-top: 0px;
+  padding-bottom: 5px;
+}
+
+.post {
+
+}
+
+.post a{
+    display: block; /* Ссылка как блочный элемент */
+    text-align: center; /* Выравнивание по центру */
+    height: 100%; /* Высота на весь слой */
+
+}
+
+._a {
+    text-decoration: none; !important;/* Отменяем подчеркивание у ссылки */
+}
+
+._a a:visited, ._a a:hover, ._a a:active {color:black}
+

@@ -1,0 +1,111 @@
+2018-06-08 08:28:18 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapy_app)
+2018-06-08 08:28:18 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.17134-SP0
+2018-06-08 08:28:18 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_app', 'LOG_FILE': 'logs\\default\\korrspider\\b9722e866adc11e8ababd863758aecce.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2018-06-08 08:28:19 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-06-08 08:28:19 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-06-08 08:28:19 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-06-08 08:28:19 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.Pipeline']
+2018-06-08 08:28:19 [scrapy.core.engine] INFO: Spider opened
+2018-06-08 08:28:19 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-08 08:28:19 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-06-08 08:28:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/robots.txt> (referer: None)
+2018-06-08 08:28:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/all/2018/june/8/> (referer: None)
+2018-06-08 08:28:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978495-pod-lvovom-v-rezervuare-dlia-soly-nashly-telo-muzhchyny> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978456-tramp-obvynyl-frantsyui-y-kanadu-v-vysokykh-poshlynakh-dlia-ssha> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978464-yzverzhenye-vulkana-v-hvatemale-pohybly-109-chelovek> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/companies/3978466-Facebook-obnarodoval-lychnye-publykatsyy-14-myllyonov-polzovatelei> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978452-rezhym-chp-v-turtsyy-skoro-mohut-otmenyt> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978447-ssha-hotovy-predostavyt-kndr-harantyy-bezopasnosty> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978454-ssha-perebrosyly-v-evropu-chetvertyi-bombardyrovschyk> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978461-putyn-khochet-vstretytsia-s-trampom-v-avstryy-smy> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978450-ukrayna-narastyt-uchastye-v-operatsyiakh-nato> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978459-v-cherkassakh-chynovnyky-prysvoyly-bolee-trekh-myllyonov-hryven> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/business/financial/3978467-mvf-vydelyt-arhentyne-50-myllyardov-dollarov> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978495-pod-lvovom-v-rezervuare-dlia-soly-nashly-telo-muzhchyny>
+None
+2018-06-08 08:28:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978469-ssha-taino-poprosyly-saudovskuui-aravyui-uvelychyt-dobychu-nefty-smy> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978468-turtsyia-namerena-otpravyt-v-kosmos-svoeho-astronavta> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978470-na-havaiiakh-lava-vulkana-unychtozhyla-600-domov> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/world/3978471-turtsyia-hotova-nachat-novuui-voennuui-operatsyui-v-yrake> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/events/3978478-ytohy-0706-da-antykorsudu-net-danyluiku> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978456-tramp-obvynyl-frantsyui-y-kanadu-v-vysokykh-poshlynakh-dlia-ssha>
+None
+2018-06-08 08:28:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978464-yzverzhenye-vulkana-v-hvatemale-pohybly-109-chelovek>
+None
+2018-06-08 08:28:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/tech/space/3978480-na-marse-obnaruzheny-orhanycheskye-molekuly-NASA> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978482-pohoda-na-vykhodnye-poteplenye-hrozy> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://korrespondent.net/ukraine/3978490-sutky-v-oos-37-obstrelov-chetvero-ranenykh> (referer: https://korrespondent.net/all/2018/june/8/)
+2018-06-08 08:28:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/companies/3978466-Facebook-obnarodoval-lychnye-publykatsyy-14-myllyonov-polzovatelei>
+None
+2018-06-08 08:28:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978452-rezhym-chp-v-turtsyy-skoro-mohut-otmenyt>
+None
+2018-06-08 08:28:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978447-ssha-hotovy-predostavyt-kndr-harantyy-bezopasnosty>
+None
+2018-06-08 08:28:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978454-ssha-perebrosyly-v-evropu-chetvertyi-bombardyrovschyk>
+None
+2018-06-08 08:28:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978461-putyn-khochet-vstretytsia-s-trampom-v-avstryy-smy>
+None
+2018-06-08 08:28:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978450-ukrayna-narastyt-uchastye-v-operatsyiakh-nato>
+None
+2018-06-08 08:28:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978459-v-cherkassakh-chynovnyky-prysvoyly-bolee-trekh-myllyonov-hryven>
+None
+2018-06-08 08:28:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/business/financial/3978467-mvf-vydelyt-arhentyne-50-myllyardov-dollarov>
+None
+2018-06-08 08:28:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978469-ssha-taino-poprosyly-saudovskuui-aravyui-uvelychyt-dobychu-nefty-smy>
+None
+2018-06-08 08:28:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978468-turtsyia-namerena-otpravyt-v-kosmos-svoeho-astronavta>
+None
+2018-06-08 08:28:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978470-na-havaiiakh-lava-vulkana-unychtozhyla-600-domov>
+None
+2018-06-08 08:28:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/world/3978471-turtsyia-hotova-nachat-novuui-voennuui-operatsyui-v-yrake>
+None
+2018-06-08 08:28:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/events/3978478-ytohy-0706-da-antykorsudu-net-danyluiku>
+None
+2018-06-08 08:28:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/tech/space/3978480-na-marse-obnaruzheny-orhanycheskye-molekuly-NASA>
+None
+2018-06-08 08:28:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978482-pohoda-na-vykhodnye-poteplenye-hrozy>
+None
+2018-06-08 08:28:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://korrespondent.net/ukraine/3978490-sutky-v-oos-37-obstrelov-chetvero-ranenykh>
+None
+2018-06-08 08:28:22 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-06-08 08:28:22 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 7959,
+ 'downloader/request_count': 21,
+ 'downloader/request_method_count/GET': 21,
+ 'downloader/response_bytes': 643510,
+ 'downloader/response_count': 21,
+ 'downloader/response_status_count/200': 21,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 6, 8, 5, 28, 22, 592367),
+ 'item_scraped_count': 19,
+ 'log_count/DEBUG': 41,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 1,
+ 'response_received_count': 21,
+ 'scheduler/dequeued': 20,
+ 'scheduler/dequeued/memory': 20,
+ 'scheduler/enqueued': 20,
+ 'scheduler/enqueued/memory': 20,
+ 'start_time': datetime.datetime(2018, 6, 8, 5, 28, 19, 89765)}
+2018-06-08 08:28:22 [scrapy.core.engine] INFO: Spider closed (finished)

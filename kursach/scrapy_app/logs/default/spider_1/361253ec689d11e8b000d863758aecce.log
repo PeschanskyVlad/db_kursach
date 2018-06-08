@@ -1,0 +1,171 @@
+2018-06-05 11:48:28 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapy_app)
+2018-06-05 11:48:28 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.17134-SP0
+2018-06-05 11:48:28 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_app', 'LOG_FILE': 'logs\\default\\spider_1\\361253ec689d11e8b000d863758aecce.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2018-06-05 11:48:28 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-06-05 11:48:28 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-06-05 11:48:28 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-06-05 11:48:28 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.Pipeline']
+2018-06-05 11:48:28 [scrapy.core.engine] INFO: Spider opened
+2018-06-05 11:48:28 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-05 11:48:28 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-06-05 11:48:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://us.battle.net/en/robots.txt> from <GET https://us.battle.net/robots.txt>
+2018-06-05 11:48:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/en/robots.txt> (referer: None)
+2018-06-05 11:48:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/en/heroes/> (referer: None)
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.blizzard.com': <GET https://www.blizzard.com/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'shop.blizzard.com': <GET https://shop.blizzard.com/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'news.blizzard.com': <GET https://news.blizzard.com>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'us.support.blizzard.com': <GET https://us.support.blizzard.com/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'playoverwatch.com': <GET https://playoverwatch.com/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'worldofwarcraft.com': <GET https://worldofwarcraft.com/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'playhearthstone.com': <GET https://playhearthstone.com/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'heroesofthestorm.com': <GET https://heroesofthestorm.com/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'starcraft2.com': <GET https://starcraft2.com/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'starcraft.com': <GET https://starcraft.com/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'us.diablo3.com': <GET https://us.diablo3.com/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'shop.battle.net': <GET https://shop.battle.net/product/call-of-duty-black-ops-4>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'us.shop.blizzard.com': <GET https://us.shop.blizzard.com/product/destiny2>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'overwatchleague.com': <GET https://overwatchleague.com/en-us>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'esports.heroesofthestorm.com': <GET https://esports.heroesofthestorm.com/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'wcs.starcraft2.com': <GET https://wcs.starcraft2.com/en-us/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'esports.blizzard.com': <GET https://esports.blizzard.com>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'us.account.blizzard.com': <GET https://us.account.blizzard.com/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'account.blizzard.com': <GET https://account.blizzard.com/gifts/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'support.blizzard.com': <GET https://support.blizzard.com/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'careers.blizzard.com': <GET https://careers.blizzard.com/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'blizzard.com': <GET http://blizzard.com/company/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'eu.battle.net': <GET https://eu.battle.net/forums/de-de/heroes/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'kr.battle.net': <GET https://kr.battle.net/forums/ko-kr/heroes/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'tw.battle.net': <GET https://tw.battle.net/forums/zh-tw/heroes/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'cn.battle.net': <GET https://cn.battle.net/forums/zh-cn/heroes/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'us.blizzard.com': <GET http://us.blizzard.com/company/about/contact.html>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'blizzard.gamespress.com': <GET https://blizzard.gamespress.com/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'dev.battle.net': <GET https://dev.battle.net/>
+2018-06-05 11:48:49 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'mkrf.ru': <GET http://mkrf.ru/>
+2018-06-05 11:48:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://us.battle.net/account/creation/en/> from <GET https://us.battle.net/account/creation/>
+2018-06-05 11:48:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://us.battle.net/login/en/logout?ref=https://us.battle.net/forums/en/heroes/&app=com-forums> from <GET https://us.battle.net/forums/en/heroes/?logout>
+2018-06-05 11:48:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://us.battle.net/login/en/?ref=https://us.battle.net/forums/en/heroes/&app=com-forums> from <GET https://us.battle.net/forums/en/heroes/?login>
+2018-06-05 11:48:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://us.battle.net/forums/en/> from <GET https://us.battle.net/forums/>
+2018-06-05 11:48:55 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://us.battle.net/forums/en/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-06-05 11:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/en/heroes/19957652/> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:48:56 [scrapy.core.engine] DEBUG: Crawled (400) <GET https://us.battle.net/forums/en/heroes/%SIMPLE_URL%> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:48:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/forums/en/heroes/19957652/>
+{'url': 'https://us.battle.net/forums/en/heroes/19957652/'}
+2018-06-05 11:48:56 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <400 https://us.battle.net/forums/en/heroes/%SIMPLE_URL%>: HTTP status code is not handled or not allowed
+2018-06-05 11:48:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://us.battle.net/forums/pt/heroes/> from <GET https://us.battle.net/forums/pt-br/heroes/>
+2018-06-05 11:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/en/heroes/> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/en/heroes/13267618/> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/en/heroes/17566182/> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:48:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://us.battle.net/forums/en/heroes/> from <GET https://us.battle.net/forums/en-us/heroes/>
+2018-06-05 11:48:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/forums/en/heroes/>
+{'url': 'https://us.battle.net/forums/en/heroes/'}
+2018-06-05 11:48:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/forums/en/heroes/13267618/>
+{'url': 'https://us.battle.net/forums/en/heroes/13267618/'}
+2018-06-05 11:48:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/forums/en/heroes/17566182/>
+{'url': 'https://us.battle.net/forums/en/heroes/17566182/'}
+2018-06-05 11:48:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (307) to <GET https://eu.battle.net/account/creation/tos.html?theme=blizzard&style=PHOENIX&country=UKR> from <GET https://us.battle.net/account/creation/en/>
+2018-06-05 11:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/login/en/?ref=https://us.battle.net/forums/en/heroes/&app=com-forums> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:48:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/login/en/?ref=https://us.battle.net/forums/en/heroes/&app=com-forums>
+{'url': 'https://us.battle.net/login/en/?ref=https://us.battle.net/forums/en/heroes/&app=com-forums'}
+2018-06-05 11:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/account/download/> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:48:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://us.battle.net/forums/en/patch-notes/> from <GET http://us.battle.net/forums/en/patch-notes/>
+2018-06-05 11:48:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://us.battle.net/forums/es/heroes/> from <GET https://us.battle.net/forums/es-mx/heroes/>
+2018-06-05 11:48:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/account/download/>
+{'url': 'https://us.battle.net/account/download/'}
+2018-06-05 11:49:00 [scrapy.core.engine] DEBUG: Crawled (400) <GET https://us.battle.net/forums/en/heroes/%PROMO_LINK_URL> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:49:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://heroesofthestorm.com/en-us/> from <GET http://us.battle.net/heroes/en/>
+2018-06-05 11:49:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://eu.battle.net/en/robots.txt> from <GET https://eu.battle.net/robots.txt>
+2018-06-05 11:49:00 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <400 https://us.battle.net/forums/en/heroes/%PROMO_LINK_URL>: HTTP status code is not handled or not allowed
+2018-06-05 11:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://eu.battle.net/en/robots.txt> (referer: None)
+2018-06-05 11:49:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://us.battle.net/forums/en/heroes/> from <GET https://us.battle.net/login/en/logout?ref=https://us.battle.net/forums/en/heroes/&app=com-forums>
+2018-06-05 11:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/en/heroes/13267620/> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/pt/heroes/> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:49:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/forums/en/heroes/13267620/>
+{'url': 'https://us.battle.net/forums/en/heroes/13267620/'}
+2018-06-05 11:49:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/forums/pt/heroes/>
+{'url': 'https://us.battle.net/forums/pt/heroes/'}
+2018-06-05 11:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://heroesofthestorm.com/robots.txt> (referer: None)
+2018-06-05 11:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/en/> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:49:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/forums/en/>
+{'url': 'https://us.battle.net/forums/en/'}
+2018-06-05 11:49:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/en/patch-notes/> (referer: None)
+2018-06-05 11:49:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/forums/en/patch-notes/>
+{'url': 'https://us.battle.net/forums/en/patch-notes/'}
+2018-06-05 11:49:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://eu.battle.net/account/creation/en/tos.html?theme=blizzard&style=PHOENIX&country=UKR> from <GET https://eu.battle.net/account/creation/tos.html?theme=blizzard&style=PHOENIX&country=UKR>
+2018-06-05 11:49:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/en/heroes/20013840/> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:49:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/forums/en/heroes/20013840/>
+{'url': 'https://us.battle.net/forums/en/heroes/20013840/'}
+2018-06-05 11:49:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/en/heroes/13267622/> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:49:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://eu.battle.net/account/creation/en/tos.html?theme=blizzard&style=PHOENIX&country=UKR> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:49:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/forums/en/heroes/13267622/>
+{'url': 'https://us.battle.net/forums/en/heroes/13267622/'}
+2018-06-05 11:49:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://eu.battle.net/account/creation/en/tos.html?theme=blizzard&style=PHOENIX&country=UKR>
+{'url': 'https://eu.battle.net/account/creation/en/tos.html?theme=blizzard&style=PHOENIX&country=UKR'}
+2018-06-05 11:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/en/heroes/15814590/> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/en/heroes/14065568/> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/en/heroes/13268292/> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/es/heroes/> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:49:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://heroesofthestorm.com/en-us/> (referer: None)
+2018-06-05 11:49:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/forums/en/heroes/15814590/>
+{'url': 'https://us.battle.net/forums/en/heroes/15814590/'}
+2018-06-05 11:49:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/forums/en/heroes/14065568/>
+{'url': 'https://us.battle.net/forums/en/heroes/14065568/'}
+2018-06-05 11:49:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/forums/en/heroes/13268292/>
+{'url': 'https://us.battle.net/forums/en/heroes/13268292/'}
+2018-06-05 11:49:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/forums/es/heroes/>
+{'url': 'https://us.battle.net/forums/es/heroes/'}
+2018-06-05 11:49:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://heroesofthestorm.com/en-us/>
+{'url': 'https://heroesofthestorm.com/en-us/'}
+2018-06-05 11:49:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://us.battle.net/forums/en/heroes/13268291/> (referer: https://us.battle.net/forums/en/heroes/)
+2018-06-05 11:49:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://us.battle.net/forums/en/heroes/13268291/>
+{'url': 'https://us.battle.net/forums/en/heroes/13268291/'}
+2018-06-05 11:49:05 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-06-05 11:49:06 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 13522,
+ 'downloader/request_count': 39,
+ 'downloader/request_method_count/GET': 39,
+ 'downloader/response_bytes': 893097,
+ 'downloader/response_count': 39,
+ 'downloader/response_status_count/200': 23,
+ 'downloader/response_status_count/301': 1,
+ 'downloader/response_status_count/302': 12,
+ 'downloader/response_status_count/307': 1,
+ 'downloader/response_status_count/400': 2,
+ 'dupefilter/filtered': 3,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 6, 5, 8, 49, 6, 291572),
+ 'httperror/response_ignored_count': 2,
+ 'httperror/response_ignored_status_count/400': 2,
+ 'item_scraped_count': 19,
+ 'log_count/DEBUG': 90,
+ 'log_count/INFO': 9,
+ 'offsite/domains': 30,
+ 'offsite/filtered': 45,
+ 'request_depth_max': 1,
+ 'response_received_count': 25,
+ 'scheduler/dequeued': 34,
+ 'scheduler/dequeued/memory': 34,
+ 'scheduler/enqueued': 34,
+ 'scheduler/enqueued/memory': 34,
+ 'start_time': datetime.datetime(2018, 6, 5, 8, 48, 28, 907341)}
+2018-06-05 11:49:06 [scrapy.core.engine] INFO: Spider closed (finished)
